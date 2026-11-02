@@ -8,7 +8,8 @@
  *   node scripts/calc.mts --list        # calculators and their input fields
  *
  * Output: JSON. One request → { calculator, input, results }; an array → an array of those.
- * Each result row carries `display`, the exact text the page shows and the post must contain.
+ * Each result row carries `number` (the exact number text the post must contain for primary rows)
+ * and `display` (number + unit, as the page shows it).
  * Exit code 1 with { error } on invalid input.
  */
 import { readFileSync } from "node:fs";
@@ -19,6 +20,7 @@ type Request = { calculator: string; input?: Record<string, unknown> };
 function run(req: Request) {
   const results = runCalculator(req.calculator, req.input ?? {}).map((r) => ({
     ...r,
+    number: formatNumber(r.value, r.digits),
     display: `${formatNumber(r.value, r.digits)} ${r.unit}`,
   }));
   return { calculator: req.calculator, input: req.input ?? {}, results };
@@ -27,6 +29,8 @@ function run(req: Request) {
 const arg = process.argv[2];
 try {
   if (arg === "--list") {
+    // Fields with their defaults and option labels. The engine treats the numbers in them as known
+    // values when it checks a draft for decimals the calculator did not produce.
     console.log(JSON.stringify(CALCULATORS.map((c) => ({ calculator: c.slug, fields: c.fields })), null, 2));
   } else {
     const text = arg ?? readFileSync(0, "utf8");
