@@ -1,0 +1,193 @@
+{
+  "slug": "how-much-paint-for-a-12x12-room",
+  "title": "How Much Paint for a 12x12 Room? Gallons Needed",
+  "description": "A 12x12 bedroom with 8-foot walls, one door, one window and two coats needs 2 gallons of paint at 350 sq ft per gallon. Here is how the estimate works.",
+  "published": "2026-11-02",
+  "relatedTool": "paint-calculator",
+  "sources": [
+    {
+      "title": "Sherwin-Williams paint calculator",
+      "url": "https://www.sherwin-williams.com/en-us/color/color-tools/paint-calculator"
+    },
+    {
+      "title": "Sherwin-Williams: How to estimate how much wallpaper you need",
+      "url": "https://www.sherwin-williams.com/homeowners/how-to/wallpapering-how-tos/sw-article-dir-howtoestimate"
+    }
+  ],
+  "calculations": [
+    {
+      "calculator": "paint-calculator",
+      "input": {
+        "lengthFt": 12,
+        "widthFt": 12,
+        "heightFt": 8,
+        "doors": 1,
+        "windows": 1
+      }
+    }
+  ],
+  "body": [
+    {
+      "type": "p",
+      "text": "For a 12 by 12 foot bedroom with 8-foot walls, one door, one window, two coats and the default coverage of 350 square feet per gallon, the calculator gives Paint to buy: 2 gallons. That figure covers the walls only. Ceilings and trim need their own estimates."
+    },
+    {
+      "type": "p",
+      "text": "The fastest way to get a number for your own room is the [Paint Calculator](/paint-calculator). Enter your length, width, wall height, number of doors and windows, coats, and coverage per gallon. The steps below show what the calculator does with those inputs, so you can check the result yourself."
+    },
+    {
+      "type": "h2",
+      "text": "The worked example"
+    },
+    {
+      "type": "p",
+      "text": "These are the inputs for a 12 by 12 foot bedroom with 8-foot walls, one door, one window, two coats, and the default coverage of 350 square feet per gallon:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Room length: 12 ft",
+        "Room width: 12 ft",
+        "Wall height: 8 ft",
+        "Doors: 1",
+        "Windows: 1",
+        "Coats: 2",
+        "Coverage per gallon: 350 sq ft"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Step 1: Find the total wall area"
+    },
+    {
+      "type": "p",
+      "text": "Wall area is the distance around the room multiplied by the wall height. The formula is (length + width) x 2 x height. Add the length and width, double that sum to get the distance around the room, then multiply by the height."
+    },
+    {
+      "type": "p",
+      "text": "For this room, the total wall area is 384 sq ft."
+    },
+    {
+      "type": "h2",
+      "text": "Step 2: Subtract doors and windows"
+    },
+    {
+      "type": "p",
+      "text": "The calculator subtracts 20 square feet for each door and each window, because openings do not need paint. This room has one door and one window, so the calculator deducts 40 sq ft from the total."
+    },
+    {
+      "type": "p",
+      "text": "That leaves a paintable wall area of 344 sq ft."
+    },
+    {
+      "type": "p",
+      "text": "The 20 square feet per opening is a standard allowance, not a measurement of your actual door or window. A large picture window or a set of French doors may be somewhat more or less than that allowance. Keep that in mind when you check your own room."
+    },
+    {
+      "type": "h2",
+      "text": "Step 3: Apply the coats and coverage"
+    },
+    {
+      "type": "p",
+      "text": "Next, the calculator multiplies the paintable area by the number of coats, then divides by the coverage per gallon. The default is 350 square feet per gallon, and two coats doubles the area that needs paint. For this room, the exact amount is 1.97 gallons."
+    },
+    {
+      "type": "h2",
+      "text": "Step 4: Round up to whole gallons"
+    },
+    {
+      "type": "p",
+      "text": "Paint is sold in whole gallons, so the calculator always rounds up, never down. Any fraction of a gallon, even a small one, becomes a full gallon in the result. That is why 1.97 gallons becomes Paint to buy: 2 gallons."
+    },
+    {
+      "type": "p",
+      "text": "Rounding up is the safer choice. If you buy the lower whole number, you can run out partway through a wall, and a second batch of the same color may not match exactly."
+    },
+    {
+      "type": "h2",
+      "text": "Check the coverage on your product label"
+    },
+    {
+      "type": "p",
+      "text": "The 350 square feet per gallon in the calculator is a default, not a promise. Paint products differ. Primers, textured paints and deep-base colors can cover less, and some high-hiding paints cover more. Look for the coverage or yield printed on your can and enter that number into the calculator in place of the default."
+    },
+    {
+      "type": "p",
+      "text": "If you are painting over a dark or very different color, expect the first coat to cover less well. A primer or tinted primer may reduce the number of topcoats you need, but check the primer's own label for its coverage."
+    },
+    {
+      "type": "h2",
+      "text": "Choosing the number of coats"
+    },
+    {
+      "type": "p",
+      "text": "The calculator uses whatever coat count you enter. The right number depends on the paint, the surface and the color change, so there is no single rule. Many painters check the label's directions for recoat guidance before deciding. If you are repainting a similar color with a high-hiding paint, you may need only one coat. If you are covering a dark color, you may need more."
+    },
+    {
+      "type": "h2",
+      "text": "What this estimate does not include"
+    },
+    {
+      "type": "p",
+      "text": "The wall estimate does not cover the ceiling. Ceilings are a separate surface with their own area, so measure the ceiling separately if you plan to paint it. The same applies to trim, such as baseboards, door casings and window frames. Trim often uses a different paint type, such as semi-gloss or satin, so it needs its own calculation based on its length and the product's coverage."
+    },
+    {
+      "type": "p",
+      "text": "Do not add ceiling or trim amounts to the wall total without checking the label for each product."
+    },
+    {
+      "type": "h2",
+      "text": "Tips for measuring your own bedroom"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Measure each wall at floor level, from corner to corner, in feet. In a square room the length and width often match, but measure both to be sure.",
+        "Measure wall height from the floor to the ceiling. If the ceiling slopes or has a peak, measure the tallest and shortest points and use the average.",
+        "Count every door and window you plan to exclude from painting.",
+        "Look up the coverage on your paint can and enter it in place of the 350 square foot default.",
+        "Decide how many coats you will apply, and enter that number."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Once you have your numbers, run them through the [Paint Calculator](/paint-calculator) and buy the whole-gallon result it gives you. Always round up, as the calculator does, rather than buying the number below your exact figure."
+    },
+    {
+      "type": "h2",
+      "text": "FAQ"
+    },
+    {
+      "type": "h3",
+      "text": "Does a 12x12 room with 8-foot walls need one gallon or two?"
+    },
+    {
+      "type": "p",
+      "text": "For one door, one window and two coats at the default coverage of 350 square feet per gallon, the calculator gives Paint to buy: 2 gallons. A room with different openings, a different coverage rate or a different number of coats may need a different amount, so run your own measurements."
+    },
+    {
+      "type": "h3",
+      "text": "Does the calculator include the ceiling?"
+    },
+    {
+      "type": "p",
+      "text": "No. The paintable wall area covers the walls only. Measure the ceiling separately and calculate it using the coverage figure from that paint's label."
+    },
+    {
+      "type": "h3",
+      "text": "Should I buy primer as well?"
+    },
+    {
+      "type": "p",
+      "text": "Primer is a separate product with its own coverage. If you are painting over a dark color, a stain or a patched surface, check the primer label and estimate it separately. The Paint Calculator only estimates the paint you enter."
+    },
+    {
+      "type": "h3",
+      "text": "What if my walls are different heights in some places?"
+    },
+    {
+      "type": "p",
+      "text": "Use the average height for a simple estimate. If part of the room has a much taller wall, such as a vaulted section, split the room into parts, calculate the paintable area of each part, add those areas together, and then divide by the coverage. If you are unsure, ask a qualified painter to look at the room."
+    }
+  ]
+}
