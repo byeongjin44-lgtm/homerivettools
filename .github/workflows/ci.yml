@@ -22,3 +22,8 @@ jobs:
       - run: npm run build
       - name: Calculator CLI works
         run: npm run calc -- '{"calculator":"paint-calculator"}'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: out
+          retention-days: 3
