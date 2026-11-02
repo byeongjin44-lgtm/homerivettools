@@ -14,12 +14,14 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const tool = TOOLS.find((t) => t.slug === (await params).calculator);
+  const { calculator } = await params;
+  const tool = TOOLS.find((t) => t.slug === calculator);
   return tool ? toolMetadata(tool) : {};
 }
 
 export default async function CalculatorPage({ params }: Props) {
-  const tool = TOOLS.find((t) => t.slug === (await params).calculator);
+  const { calculator } = await params;
+  const tool = TOOLS.find((t) => t.slug === calculator);
   if (!tool) notFound();
   return <ToolPageLayout tool={tool} />;
 }
