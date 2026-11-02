@@ -3,6 +3,7 @@ name: CI
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -39,3 +40,12 @@ jobs:
           test -f out/ads.txt && test -f out/sitemap.xml && test -f out/robots.txt
           grep -q "homerivettools.com/paint-calculator" out/sitemap.xml
           ls out
+      # Cloudflare's own GitHub trigger did not fire for pushes after the first deploy, so CI asks
+      # Cloudflare to deploy main once every check has passed (Pages deploy hook, stored as a secret).
+      - name: Deploy to Cloudflare Pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        env:
+          HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then echo "::warning::CLOUDFLARE_DEPLOY_HOOK secret is not set; skipping deploy"; exit 0; fi
+          curl -fsS -X POST "$HOOK" > /dev/null && echo "Cloudflare deploy requested"
