@@ -24,6 +24,7 @@ export default function BlogIndexPage() {
           calculator so you can run your own numbers.
         </p>
       </div>
+      {posts.length === 0 && <p className="text-zinc-600 dark:text-zinc-400">The first guides are coming soon.</p>}
       <ul className="flex flex-col gap-4">
         {posts.map((post) => {
           const tool = getPostTool(post);

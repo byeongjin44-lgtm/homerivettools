@@ -14,18 +14,27 @@ type Props = { params: Promise<{ slug: string }> };
 // Static export: only the posts present at build time exist.
 export const dynamicParams = false;
 
+/**
+ * `output: "export"` refuses a dynamic route with no params. Until the first approved post is
+ * published, build a single noindex placeholder page instead (not linked anywhere, not in the sitemap).
+ */
+const NO_POSTS_SLUG = "no-posts-yet";
+
 export function generateStaticParams() {
-  return getAllPosts().map((post) => ({ slug: post.slug }));
+  const posts = getAllPosts();
+  return posts.length ? posts.map((post) => ({ slug: post.slug })) : [{ slug: NO_POSTS_SLUG }];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPost((await params).slug);
-  if (!post) return {};
+  if (!post) return { title: `Blog — ${SITE_NAME}`, robots: { index: false, follow: true } };
   return pageMetadata({ title: `${post.title} — ${SITE_NAME}`, description: post.description, path: blogPath(post.slug) });
 }
 
 export default async function BlogPostPage({ params }: Props) {
-  const post = getPost((await params).slug);
+  const { slug } = await params;
+  const post = getPost(slug);
+  if (!post && slug === NO_POSTS_SLUG && getAllPosts().length === 0) return <NoPostsYet />;
   if (!post) notFound();
   const tool = getPostTool(post);
   const url = `${SITE_URL}${blogPath(post.slug)}`;
@@ -107,5 +116,24 @@ function TryTool({ name, path, description }: { name: string; path: string; desc
         Open the calculator →
       </Link>
     </div>
+  );
+}
+
+function NoPostsYet() {
+  return (
+    <Container className="flex flex-1 flex-col gap-4 py-10 text-zinc-700 dark:text-zinc-300">
+      <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-50">No guides yet</h1>
+      <p>
+        Our first guides are on the way. Meanwhile, see the{" "}
+        <Link href="/blog" className="font-medium text-zinc-900 underline dark:text-zinc-50">
+          blog
+        </Link>{" "}
+        or try a calculator from the{" "}
+        <Link href="/" className="font-medium text-zinc-900 underline dark:text-zinc-50">
+          home page
+        </Link>
+        .
+      </p>
+    </Container>
   );
 }
