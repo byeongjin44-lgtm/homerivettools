@@ -29,7 +29,7 @@ Korean. If a task seems to require it, stop and ask first.
    installation, hazardous-material or building-code content. The list is `FORBIDDEN_TOPICS` in
    `src/lib/content-policy.ts`, enforced on every post and on calculator page text, and guarded by
    `src/lib/content-policy.test.ts`. Adding phrases is fine; removing them needs approval.
-4. **Cite sources and point to the label.** Every calculator (except plain geometry) and every post lists
+4. **Cite sources and point to the label.** Every calculator and every post lists
    https sources, and every post must tell readers to check the manufacturer's label.
 5. **Formula table for the owner.** The formulas and sources are summarised in Korean in the claude.ai doc
    "사이트 B 계산기 공식·근거표". Any approved formula change must be reflected there too.

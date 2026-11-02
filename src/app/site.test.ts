@@ -16,9 +16,8 @@ describe("site", () => {
     expect(generateStaticParams().map((p) => p.calculator).sort()).toEqual(slugs);
   });
 
-  it("cites https sources for every calculator except plain geometry", () => {
+  it("cites https sources for every calculator", () => {
     for (const t of TOOLS) {
-      if (t.slug === "square-footage-calculator") continue;
       expect(t.sources.length, t.slug).toBeGreaterThan(0);
       for (const s of t.sources) expect(s.url).toMatch(/^https:\/\//);
     }

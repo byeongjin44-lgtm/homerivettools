@@ -130,7 +130,12 @@ export const TOOLS: ToolDefinition[] = [
     metaDescription:
       "Calculate square footage for rectangles, triangles and circles, with the result in square feet, square yards and square meters. Add up rooms for any project.",
     related: ["paint-calculator", "flooring-calculator"],
-    sources: [],
+    sources: [
+      {
+        title: "NIST Guide to the SI, Appendix B.8: Factors for units listed alphabetically",
+        url: "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8",
+      },
+    ],
   }),
   tool({
     slug: "wallpaper-calculator",
