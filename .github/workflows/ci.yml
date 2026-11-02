@@ -22,8 +22,20 @@ jobs:
       - run: npm run build
       - name: Calculator CLI works
         run: npm run calc -- '{"calculator":"paint-calculator"}'
-      - uses: actions/upload-artifact@v4
-        with:
-          name: site
-          path: out
-          retention-days: 3
+      - name: Built pages show the worked examples
+        run: |
+          set -e
+          check() { grep -q "$2" "out/$1.html" || { echo "out/$1.html is missing: $2"; exit 1; }; }
+          check paint-calculator "3 gallons"
+          check concrete-calculator "56 bags"
+          check tile-calculator "12 boxes"
+          check flooring-calculator "10 boxes"
+          check mulch-calculator "25 bags"
+          check square-footage-calculator "120 sq ft"
+          check wallpaper-calculator "10 double rolls"
+          check gravel-calculator "2.59 tons"
+          check deck-board-calculator "26 boards"
+          check insulation-calculator "13 packages"
+          test -f out/ads.txt && test -f out/sitemap.xml && test -f out/robots.txt
+          grep -q "homerivettools.com/paint-calculator" out/sitemap.xml
+          ls out
