@@ -47,5 +47,11 @@ jobs:
         env:
           HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
         run: |
+          # Tolerate spaces, line breaks or quotes pasted along with the URL.
+          HOOK=$(printf '%s' "$HOOK" | tr -d '[:space:]"'"'")
           if [ -z "$HOOK" ]; then echo "::warning::CLOUDFLARE_DEPLOY_HOOK secret is not set; skipping deploy"; exit 0; fi
+          case "$HOOK" in
+            https://api.cloudflare.com/*) ;;
+            *) echo "::error::CLOUDFLARE_DEPLOY_HOOK must be the https://api.cloudflare.com/... deploy hook URL (starts with: ${HOOK:0:12})"; exit 1 ;;
+          esac
           curl -fsS -X POST "$HOOK" > /dev/null && echo "Cloudflare deploy requested"
