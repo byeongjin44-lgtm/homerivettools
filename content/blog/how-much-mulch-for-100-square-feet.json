@@ -1,0 +1,140 @@
+{
+  "slug": "how-much-mulch-for-100-square-feet",
+  "title": "How Much Mulch for 100 Square Feet? Bulk and Bag Amounts",
+  "description": "For a 10 by 10 foot bed (100 square feet) spread 3 inches deep, you need 0.93 cubic yards of bulk mulch or 13 bags of 2 cubic feet. Check your label.",
+  "published": "2026-11-03",
+  "relatedTool": "mulch-calculator",
+  "sources": [
+    {
+      "title": "Mississippi State University Extension: Calculate mulch, soil needs for plant beds",
+      "url": "https://extension.msstate.edu/news/southern-gardening/1997/calculate-mulch-soil-needs-for-plant-beds"
+    }
+  ],
+  "calculations": [
+    {
+      "calculator": "mulch-calculator",
+      "input": {
+        "lengthFt": 10,
+        "widthFt": 10,
+        "depthIn": 3,
+        "bagCuFt": "2"
+      }
+    }
+  ],
+  "body": [
+    {
+      "type": "p",
+      "text": "For a bed that is 100 square feet and spread 3 inches deep, you need 0.93 cubic yards of bulk mulch, or 13 bags if you buy 2 cubic foot bags. To run the numbers for your own bed, enter your measurements into the [Mulch & Soil Calculator](/mulch-calculator)."
+    },
+    {
+      "type": "h2",
+      "text": "The example: a 10 by 10 foot bed"
+    },
+    {
+      "type": "p",
+      "text": "Take a bed that measures 10 feet long and 10 feet wide. Multiplying those gives 100 square feet of area, which is the number to plan around. The depth in this example is 3 inches. Use the depth you actually plan to spread, because the depth changes the amount you need."
+    },
+    {
+      "type": "h2",
+      "text": "How the calculation works"
+    },
+    {
+      "type": "p",
+      "text": "Mulch is sold by volume, so the calculator turns area and depth into a volume. The steps are:"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Measure the bed length and width in feet and multiply them to get the area in square feet. For this bed, the area is 100 square feet.",
+        "Enter the depth in inches, not feet. The calculator uses a published constant of 324 square feet per cubic yard at 1 inch deep, which means one cubic yard covers 324 square feet one inch deep. It divides the area by 324 and multiplies by the depth in inches. For this bed at 3 inches deep, the bulk amount is 0.93 cubic yards.",
+        "To get the bag count, the calculator converts the volume into cubic feet, using the published constant of 27 cubic feet per cubic yard. This bed needs a volume of 25 cubic feet.",
+        "Divide that volume by the bag size and round up to a whole number of bags. With 2 cubic foot bags, this bed needs 13 bags."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Bulk mulch versus bags"
+    },
+    {
+      "type": "p",
+      "text": "Both options cover the same bed. They just come in different units and suit different jobs."
+    },
+    {
+      "type": "p",
+      "text": "Bulk mulch is measured in cubic yards and is usually delivered loose, dumped in a pile. For this bed, the amount to order is 0.93 cubic yards. Bulk makes sense for larger jobs, but you need a spot to dump it and a way to move it to the bed, such as a wheelbarrow and a reasonably short path."
+    },
+    {
+      "type": "p",
+      "text": "Bags suit small beds, beds you reach by a walkway, or jobs where you want to carry the material yourself. For this bed, you would buy 13 bags of 2 cubic feet each. Because you cannot buy part of a bag, the count is rounded up, so the bags hold slightly more than the 25 cubic feet the bed needs. Keep the extra for touch-ups."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Bulk: measured in cubic yards, delivered loose, needs a dump spot and a way to move it.",
+        "Bags: measured in the cubic feet printed on the bag, easy to carry, and the count is rounded up to whole bags.",
+        "Either way: the calculator result is a starting point until you check the label on the product you buy."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Check the bag size and yield on the label"
+    },
+    {
+      "type": "p",
+      "text": "The example uses 2 cubic foot bags. Enter the bag size you actually plan to buy, because the bag count changes with it. If the bag you pick is labeled with a different volume, use that number."
+    },
+    {
+      "type": "p",
+      "text": "Products differ, so check the coverage or yield printed on the label of the exact product you buy rather than relying on a number from memory or from another brand."
+    },
+    {
+      "type": "h2",
+      "text": "Common pitfalls"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Entering the depth in feet. The depth goes in inches. A 3 inch layer is entered as 3.",
+        "Measuring more area than you will cover. Measure only the planted bed you plan to mulch, not the whole yard.",
+        "Ordering exactly the calculated amount with no margin. Mulch settles and shifts when you spread it, so keep a little extra on hand for low spots.",
+        "Changing the depth after you have ordered. A deeper or shallower layer changes the amount, so settle on the depth before you buy."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Using the calculator for your own bed"
+    },
+    {
+      "type": "p",
+      "text": "Measure your bed length and width in feet, and decide on the depth in inches. Enter those into the [Mulch & Soil Calculator](/mulch-calculator), pick the bag size you plan to buy, and compare the bulk and bag results. Use your own measurements rather than the example, then check the coverage or yield printed on your product label before you buy."
+    },
+    {
+      "type": "h2",
+      "text": "FAQ"
+    },
+    {
+      "type": "h3",
+      "text": "Is 3 inches the right depth for mulch?"
+    },
+    {
+      "type": "p",
+      "text": "Three inches is the depth used in this example. The calculator accepts the depth you enter, so use the depth you plan to spread. If you are unsure which depth suits your plants, ask your local garden center or another qualified professional."
+    },
+    {
+      "type": "h3",
+      "text": "Why is the bag total sometimes a little more than the volume I need?"
+    },
+    {
+      "type": "p",
+      "text": "Bags come in whole units, and the calculator rounds the count up. That leaves a small surplus, which you can save for touch-ups or a small area nearby."
+    },
+    {
+      "type": "h3",
+      "text": "Should I order bulk or bags?"
+    },
+    {
+      "type": "p",
+      "text": "Bags are easier for small beds and for carrying by hand. Bulk is usually the choice for larger beds where you have a place to dump the load and a way to move it. Compare both results from the calculator, then pick the option that fits your site and your labor."
+    }
+  ]
+}
