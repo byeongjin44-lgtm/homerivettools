@@ -1,0 +1,143 @@
+{
+  "slug": "how-much-laminate-flooring-12x14-room",
+  "title": "How Much Laminate Flooring Do I Need for a 12x14 Room?",
+  "description": "A 12x14 room needs 9 boxes of laminate with a straight layout (7% extra) or 10 boxes on a diagonal (15% extra), at 20 sq ft per box. Here is how the count works.",
+  "published": "2026-11-04",
+  "relatedTool": "flooring-calculator",
+  "sources": [
+    {
+      "title": "Lowe's: How to calculate the correct footage when purchasing flooring",
+      "url": "https://pdf.lowes.com/productdocuments/3f70b1c9-8ab7-4125-a2e7-9a3d080d2861/08130541.pdf"
+    }
+  ],
+  "calculations": [
+    {
+      "calculator": "flooring-calculator",
+      "input": {
+        "lengthFt": 12,
+        "widthFt": 14,
+        "sqFtPerBox": 20,
+        "layout": "straight"
+      }
+    },
+    {
+      "calculator": "flooring-calculator",
+      "input": {
+        "lengthFt": 12,
+        "widthFt": 14,
+        "sqFtPerBox": 20,
+        "layout": "diagonal"
+      }
+    }
+  ],
+  "body": [
+    {
+      "type": "p",
+      "text": "A 12x14 room needs 9 boxes of laminate flooring for a straight layout with 7% extra, or 10 boxes for a diagonal layout with 15% extra, if each box covers 20 sq ft. You can run the same numbers for your own room with the [Flooring Calculator](/flooring-calculator). The steps below show how the result is reached."
+    },
+    {
+      "type": "h2",
+      "text": "How the calculation works"
+    },
+    {
+      "type": "p",
+      "text": "Laminate, hardwood and vinyl plank are all sold by the box, and each box covers a set number of square feet. The calculator uses three steps:"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Find the floor area. Multiply the room length by the room width. A 12 ft by 14 ft room is 168 sq ft.",
+        "Add the extra for cuts and waste. A straight layout adds 7%, and a diagonal layout adds 15%.",
+        "Divide the total by the coverage printed on one box, then round up to a whole box. In this example, each box covers 20 sq ft."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Worked example: straight versus diagonal"
+    },
+    {
+      "type": "p",
+      "text": "Here is the same 12x14 room with the same 20 sq ft box, compared across the two layouts."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Straight layout (7% extra): 168 sq ft of floor plus 7% extra comes to 179.8 sq ft of flooring. That means you should buy 9 boxes.",
+        "Diagonal layout (15% extra): 168 sq ft of floor plus 15% extra comes to 193.2 sq ft of flooring. That means you should buy 10 boxes."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The diagonal layout needs one more box. Nine boxes cover 180 sq ft, which is not enough for the 193.2 sq ft the diagonal layout calls for. Diagonal rows create more angled cuts along the walls, so the calculator adds a larger allowance for them."
+    },
+    {
+      "type": "h2",
+      "text": "Why the extra matters"
+    },
+    {
+      "type": "p",
+      "text": "The extra percentage covers the pieces you cut at the walls, around doorways and at the end of each row, plus any boards that crack during installation and cannot be reused. Offcuts from one row can sometimes start the next row, but some material is always lost to waste."
+    },
+    {
+      "type": "p",
+      "text": "If you skip the extra and buy exactly the floor area divided by the box coverage, you will almost always come up short partway through the job. Running out in the middle of a room is harder to fix than buying one more box up front, especially if the color varies between production runs."
+    },
+    {
+      "type": "h2",
+      "text": "Check the box label before you buy"
+    },
+    {
+      "type": "p",
+      "text": "The calculator uses 20 sq ft per box because that is the coverage for this example. Products differ. Coverage varies between laminate brands and product lines, so check the coverage or yield printed on the label of the box you plan to buy. Enter that number into the calculator, because a different coverage figure changes the box count."
+    },
+    {
+      "type": "p",
+      "text": "Measure the length and width of the room in feet, to the nearest inch if you can. Measure at the widest points and include closets, alcoves and other openings that will receive flooring."
+    },
+    {
+      "type": "h2",
+      "text": "Pitfalls to avoid"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Measuring only the open part of the room and forgetting closets or alcoves that will get flooring.",
+        "Using the box count from one product with the coverage figure from another.",
+        "Choosing the straight layout extra when you actually plan a diagonal install.",
+        "Buying exactly the calculated number with nothing to spare for repairs."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "If you are also painting the room, the [How Much Paint for a 12x12 Room?](/blog/how-much-paint-for-a-12x12-room) guide covers that calculation in the same step-by-step way."
+    },
+    {
+      "type": "h2",
+      "text": "FAQ"
+    },
+    {
+      "type": "h3",
+      "text": "Should I always buy the 7% extra?"
+    },
+    {
+      "type": "p",
+      "text": "The 7% figure is the straight-layout setting in the calculator. If you plan a diagonal layout, use the 15% setting instead. Choose the layout you will actually install, and enter your own room measurements into the [Flooring Calculator](/flooring-calculator)."
+    },
+    {
+      "type": "h3",
+      "text": "Does the same method work for hardwood and vinyl plank?"
+    },
+    {
+      "type": "p",
+      "text": "Yes. The formula is the same for laminate, hardwood and vinyl plank: floor area times (1 plus the extra), divided by the coverage per box, rounded up. Use the coverage printed on the label of the product you are buying."
+    },
+    {
+      "type": "h3",
+      "text": "What if my room is not a simple rectangle?"
+    },
+    {
+      "type": "p",
+      "text": "Sketch the room and split it into rectangles. Measure the length and width of each part, and enter those measurements into the calculator. Check the coverage on the label before you buy, and plan your layout for the whole room rather than each piece on its own."
+    }
+  ]
+}
