@@ -6,7 +6,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { AdSlot } from "@/components/AdSlot";
 import { BlogContent } from "@/components/blog/BlogContent";
 import { pageMetadata } from "@/lib/page-metadata";
-import { blogPath, getAllPosts, getPost, getPostTool } from "@/lib/blog";
+import { blogPath, getAllPosts, getPost, getPostTool, getRelatedPosts } from "@/lib/blog";
 import { SITE_NAME, SITE_URL } from "@/lib/site-config";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -37,6 +37,7 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post && slug === NO_POSTS_SLUG && getAllPosts().length === 0) return <NoPostsYet />;
   if (!post) notFound();
   const tool = getPostTool(post);
+  const related = getRelatedPosts(post);
   const url = `${SITE_URL}${blogPath(post.slug)}`;
 
   return (
@@ -97,6 +98,24 @@ export default async function BlogPostPage({ params }: Props) {
         <AdSlot id="blog-bottom" />
 
         {tool && <TryTool name={tool.name} path={tool.path} description={tool.shortDescription} />}
+
+        {related.length > 0 && (
+          <nav aria-labelledby="related-guides" className="flex flex-col gap-3 border-t border-zinc-200 pt-6 dark:border-zinc-800">
+            <h2 id="related-guides" className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">
+              Related guides
+            </h2>
+            <ul className="flex flex-col gap-3">
+              {related.map((p) => (
+                <li key={p.slug}>
+                  <Link href={blogPath(p.slug)} className="font-medium text-zinc-900 underline dark:text-zinc-50">
+                    {p.title}
+                  </Link>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400">{p.description}</p>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
       </article>
     </Container>
   );

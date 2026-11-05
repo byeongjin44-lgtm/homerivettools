@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getAllPosts, parseInline, postText, validatePost } from "@/lib/blog";
+import { type BlogPost, getAllPosts, getRelatedPosts, parseInline, postText, validatePost } from "@/lib/blog";
 
 const valid = {
   slug: "example-post",
@@ -87,5 +87,31 @@ describe("content/blog", () => {
 
   it("hides posts dated in the future", () => {
     expect(getAllPosts("1999-01-01")).toEqual([]);
+  });
+
+  it("every real post gets related guides that never include itself", () => {
+    const posts = getAllPosts();
+    for (const post of posts) {
+      const related = getRelatedPosts(post, 3, posts);
+      expect(related.length).toBe(Math.min(3, posts.length - 1));
+      expect(related.map((p) => p.slug)).not.toContain(post.slug);
+    }
+  });
+});
+
+describe("getRelatedPosts", () => {
+  const mk = (slug: string, relatedTool?: string): BlogPost =>
+    ({ slug, title: slug, description: "x".repeat(50), published: "2026-11-01", relatedTool, sources: [], body: [] }) as unknown as BlogPost;
+
+  it("orders same calculator, then same category, then the rest; never the post itself", () => {
+    // paint and tile share "Walls & Floors"; concrete is "Concrete & Landscaping".
+    const posts = [mk("a", "concrete-calculator"), mk("b", "tile-calculator"), mk("c", "paint-calculator"), mk("d"), mk("self", "paint-calculator")];
+    const self = posts[4];
+    expect(getRelatedPosts(self, 3, posts).map((p) => p.slug)).toEqual(["c", "b", "a"]);
+    expect(getRelatedPosts(self, 10, posts).map((p) => p.slug)).toEqual(["c", "b", "a", "d"]);
+  });
+
+  it("returns nothing when the post is the only one", () => {
+    expect(getRelatedPosts(mk("solo"), 3, [mk("solo")])).toEqual([]);
   });
 });
