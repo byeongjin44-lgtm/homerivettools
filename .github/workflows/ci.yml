@@ -39,6 +39,20 @@ jobs:
           check insulation-calculator "13 packages"
           test -f out/ads.txt && test -f out/sitemap.xml && test -f out/robots.txt
           grep -q "homerivettools.com/paint-calculator" out/sitemap.xml
+      - name: Share-preview images are built and linked
+        run: |
+          set -e
+          png() { test -s "out/og/$1.png" && head -c 8 "out/og/$1.png" | od -An -c | grep -q "P   N   G" || { echo "out/og/$1.png is missing or not a PNG"; exit 1; }; }
+          meta() { grep -q "og:image\" content=\"https://homerivettools.com/og/$2.png" "out/$1.html" || { echo "out/$1.html does not use og/$2.png"; exit 1; }; }
+          png home
+          png paint-calculator
+          meta paint-calculator paint-calculator
+          meta about home
+          meta index home
+          post=$(ls content/blog | head -1 | sed 's/\.json$//')
+          png "blog-$post"
+          meta "blog/$post" "blog-$post"
+          ls out/og
           ls out
       # Cloudflare's own GitHub trigger did not fire for pushes after the first deploy, so CI asks
       # Cloudflare to deploy main once every check has passed (Pages deploy hook, stored as a secret).

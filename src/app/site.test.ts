@@ -3,6 +3,8 @@ import { ADSENSE_CLIENT, SITE_URL, TOOLS, TOOL_CATEGORIES, adsTxt } from "@/lib/
 import { CALCULATORS } from "@/lib/calc/registry";
 import { CALCULATOR_CONTENT } from "@/lib/calculator-content";
 import { findForbiddenTopics } from "@/lib/content-policy";
+import { ogImageKey, ogImagePath } from "@/lib/og";
+import { pageMetadata } from "@/lib/page-metadata";
 import sitemap from "./sitemap";
 import robots from "./robots";
 import { generateStaticParams } from "./[calculator]/page";
@@ -46,5 +48,22 @@ describe("site", () => {
       const text = [...c.howItWorks, ...c.tips, ...c.faq.flatMap((f) => [f.q, f.a]), c.scope ?? ""].join("\n");
       expect(findForbiddenTopics(text), slug).toEqual([]);
     }
+  });
+});
+
+describe("share-preview images", () => {
+  it("gives the homepage, each calculator and each post its own image; other pages share the homepage one", () => {
+    expect(ogImageKey("/")).toBe("home");
+    expect(ogImageKey("/about")).toBe("home");
+    expect(ogImageKey("/blog")).toBe("home");
+    expect(ogImageKey("/blog/how-much-paint")).toBe("blog-how-much-paint");
+    for (const t of TOOLS) expect(ogImageKey(t.path)).toBe(t.slug);
+  });
+
+  it("puts an absolute 1200x630 image into Open Graph and Twitter metadata", () => {
+    const meta = pageMetadata({ title: "T", description: "D", path: "/paint-calculator" });
+    const og = meta.openGraph?.images as { url: string; width: number; height: number }[];
+    expect(og[0]).toMatchObject({ url: `${SITE_URL}${ogImagePath("/paint-calculator")}`, width: 1200, height: 630 });
+    expect(meta.twitter).toMatchObject({ card: "summary_large_image" });
   });
 });
