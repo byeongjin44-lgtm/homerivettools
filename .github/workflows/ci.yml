@@ -58,6 +58,7 @@ jobs:
           set -e
           png() { test -s "out/pin/$1.png" && head -c 8 "out/pin/$1.png" | od -An -c | grep -q "P   N   G" || { echo "out/pin/$1.png is missing or not a PNG"; exit 1; }; }
           png paint-calculator
+          grep -q 'name="p:domain_verify" content="82490c7284f04838fe240d90f6c0ac3a"' out/index.html || { echo "Pinterest claim tag missing"; exit 1; }
           today=$(date -u +%F)
           for f in content/blog/*.json; do
             published=$(grep -o '"published": *"[0-9-]*"' "$f" | grep -o '[0-9-]\{10\}')

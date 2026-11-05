@@ -11,7 +11,7 @@ export const CONTACT_EMAIL = "contact@homerivettools.com";
  * Pinterest website claim: the code from Pinterest (Settings → Claimed accounts → Claim website →
  * "Add HTML tag"), i.e. the content of its p:domain_verify meta tag. null = no tag.
  */
-export const PINTEREST_DOMAIN_VERIFY: string | null = null;
+export const PINTEREST_DOMAIN_VERIFY: string | null = "82490c7284f04838fe240d90f6c0ac3a";
 
 export const ADSENSE_CLIENT: string | null = "ca-pub-5531085038115326";
 
