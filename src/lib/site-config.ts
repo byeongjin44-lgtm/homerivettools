@@ -7,6 +7,12 @@ export const CONTACT_EMAIL = "contact@homerivettools.com";
  * the AdSense consent message, configured in the AdSense dashboard), fills /ads.txt, and shows the
  * Advertising section of the Privacy page. Update that page's "Last updated" date when changing.
  */
+/**
+ * Pinterest website claim: the code from Pinterest (Settings → Claimed accounts → Claim website →
+ * "Add HTML tag"), i.e. the content of its p:domain_verify meta tag. null = no tag.
+ */
+export const PINTEREST_DOMAIN_VERIFY: string | null = null;
+
 export const ADSENSE_CLIENT: string | null = "ca-pub-5531085038115326";
 
 /** Contents of /ads.txt for the configured AdSense account. */

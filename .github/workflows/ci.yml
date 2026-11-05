@@ -49,10 +49,23 @@ jobs:
           meta paint-calculator paint-calculator
           meta about home
           meta index home
-          post=$(ls content/blog | head -1 | sed 's/\.json$//')
+          post=$(grep -L "\"published\": *\"$(date -u -d tomorrow +%F)\"" content/blog/*.json | head -1 | xargs basename | sed 's/\.json$//')
           png "blog-$post"
           meta "blog/$post" "blog-$post"
           ls out/og
+      - name: Pinterest images are built
+        run: |
+          set -e
+          png() { test -s "out/pin/$1.png" && head -c 8 "out/pin/$1.png" | od -An -c | grep -q "P   N   G" || { echo "out/pin/$1.png is missing or not a PNG"; exit 1; }; }
+          png paint-calculator
+          today=$(date -u +%F)
+          for f in content/blog/*.json; do
+            published=$(grep -o '"published": *"[0-9-]*"' "$f" | grep -o '[0-9-]\{10\}')
+            # Posts dated in the future are not built yet (see getAllPosts).
+            [[ "$published" > "$today" ]] && continue
+            png "blog-$(basename "$f" .json)"
+          done
+          ls out/pin
           ls out
       # Cloudflare's own GitHub trigger did not fire for pushes after the first deploy, so CI asks
       # Cloudflare to deploy main once every check has passed (Pages deploy hook, stored as a secret).

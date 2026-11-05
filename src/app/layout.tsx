@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { ADSENSE_CLIENT, SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from "@/lib/site-config";
+import { ADSENSE_CLIENT, PINTEREST_DOMAIN_VERIFY, SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from "@/lib/site-config";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
   },
+  ...(PINTEREST_DOMAIN_VERIFY ? { other: { "p:domain_verify": PINTEREST_DOMAIN_VERIFY } } : {}),
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
