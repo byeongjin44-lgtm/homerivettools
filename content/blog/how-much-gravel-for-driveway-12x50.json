@@ -1,0 +1,137 @@
+{
+  "slug": "how-much-gravel-for-driveway-12x50",
+  "title": "How Much Gravel for a Driveway? 12x50 Example in Tons",
+  "description": "A 12-foot by 50-foot driveway at 4 inches deep needs 7.41 cu yd of gravel, or 10.37 tons at 1.4 tons per cubic yard. Here is how the math works.",
+  "published": "2026-11-06",
+  "relatedTool": "gravel-calculator",
+  "sources": [
+    {
+      "title": "Mulch Pros: Material weight and coverage",
+      "url": "https://mulchpros.com/material-weight-and-coverage/"
+    }
+  ],
+  "calculations": [
+    {
+      "calculator": "gravel-calculator",
+      "input": {
+        "lengthFt": 50,
+        "widthFt": 12,
+        "depthIn": 4
+      }
+    }
+  ],
+  "body": [
+    {
+      "type": "p",
+      "text": "A 12-foot by 50-foot driveway at 4 inches deep needs 7.41 cu yd of gravel, which comes to 10.37 tons at the calculator's default weight of 1.4 tons per cubic yard. The weight your supplier gives for your exact material matters most, so confirm that before you order."
+    },
+    {
+      "type": "p",
+      "text": "You can run your own numbers in the [Gravel & Sand Calculator](/gravel-calculator). Enter your driveway's length, width, and depth, then check the result against the weight your supplier gives you."
+    },
+    {
+      "type": "h2",
+      "text": "The worked example"
+    },
+    {
+      "type": "p",
+      "text": "This driveway is 50 feet long and 12 feet wide, which gives a surface area of 600 sq ft. The gravel will be spread 4 inches deep. Here is how the calculator gets from those measurements to a tonnage:"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Find the area. Multiply length by width: 50 ft x 12 ft gives 600 sq ft.",
+        "Find the volume in cubic feet. Multiply the area by the depth in feet. The depth is 4 inches, so the volume comes to 200 cu ft.",
+        "Convert to cubic yards. A cubic yard holds 27 cubic feet, so 200 cu ft becomes 7.41 cu yd.",
+        "Convert to tons. Multiply cubic yards by the weight per cubic yard. At the default of 1.4 tons per cubic yard, 7.41 cu yd comes to 10.37 tons."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The calculator also uses a shortcut that gives the same answer in one step: area in square feet times depth in inches, divided by 324. The 324 comes from one cubic yard covering 324 sq ft at a depth of one inch. Either way, you end up with 7.41 cu yd and 10.37 tons."
+    },
+    {
+      "type": "h2",
+      "text": "Why cubic yards come first"
+    },
+    {
+      "type": "p",
+      "text": "Gravel is measured in two ways: volume and weight. Volume is how much space the pile fills, and it is the number you work out from your driveway's dimensions. Weight is what many suppliers charge for and what the delivery truck carries. That is why the calculator gives you cubic yards first, then converts to tons."
+    },
+    {
+      "type": "p",
+      "text": "Some suppliers sell by the cubic yard and others sell by the ton. Ask which one they use, then use the matching number from the calculator. If they quote by the ton, the 10.37 tons figure is your starting point. If they quote by the cubic yard, the 7.41 cu yd figure is the one to use."
+    },
+    {
+      "type": "h2",
+      "text": "Checking the weight for your material"
+    },
+    {
+      "type": "p",
+      "text": "The 1.4 ton default is a typical figure, not a guarantee. Supplier tables list most gravel at about 2,600 to 2,800 pounds per cubic yard, and the default of 1.4 tons equals 2,800 pounds. Crushed stone, pea gravel, and sand can each weigh differently, and moisture changes weight too."
+    },
+    {
+      "type": "p",
+      "text": "Ask your supplier for the weight per cubic yard of the exact product you are buying. Enter that number in the calculator's weight field and recalculate. Use the supplier's weight instead of the default whenever you can get it."
+    },
+    {
+      "type": "p",
+      "text": "Also check the product sheet for the material you choose. Products differ, so the figures printed on the label or sheet are the ones to trust over any general table."
+    },
+    {
+      "type": "h2",
+      "text": "Common mistakes to avoid"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Entering depth in feet instead of inches. The calculator expects the depth in inches, so a 4-inch layer should be entered as 4 inches.",
+        "Measuring only the paved strip and forgetting any edge or turnaround area you plan to cover.",
+        "Using the default weight without asking the supplier. A small difference in tons per cubic yard can change the total noticeably on a large job.",
+        "Assuming the delivered weight will match the estimate exactly. Keep the supplier's delivery ticket so you can compare it with your number."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "How to use the calculator for your own driveway"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Measure the length and width of the area you plan to cover, in feet.",
+        "Choose the depth you plan to spread, in inches.",
+        "Get the weight per cubic yard from your supplier for the exact material you are buying.",
+        "Enter all three values in the Gravel & Sand Calculator and read the cubic yards and tons.",
+        "Cross-check the result against the product sheet from your supplier, and use the figures printed there for your product."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "FAQ"
+    },
+    {
+      "type": "h3",
+      "text": "Can I order exactly 10.37 tons?"
+    },
+    {
+      "type": "p",
+      "text": "The calculator gives an estimate based on the measurements and weight you enter. Ask your supplier how they measure and whether they can load to a specific tonnage. Many suppliers will advise on how much to order for your project."
+    },
+    {
+      "type": "h3",
+      "text": "Does the calculator work for other driveway sizes?"
+    },
+    {
+      "type": "p",
+      "text": "Yes. Enter your own length, width, depth, and weight per cubic yard. The same steps apply to any rectangular area."
+    },
+    {
+      "type": "h3",
+      "text": "Can I use the same method for sand?"
+    },
+    {
+      "type": "p",
+      "text": "Yes. The Gravel & Sand Calculator works for sand as well. Enter the weight per cubic yard for the sand you are buying, since sand often weighs differently than gravel."
+    }
+  ]
+}
