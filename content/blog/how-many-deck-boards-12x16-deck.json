@@ -1,0 +1,140 @@
+{
+  "slug": "how-many-deck-boards-12x16-deck",
+  "title": "How Many Deck Boards Do I Need for a 12x16 Deck?",
+  "description": "For a 12x16 foot deck using 5.5 inch boards, 16 foot lengths and 3/16 inch gaps, you need 26 boards. Here is how the count works.",
+  "published": "2026-11-07",
+  "relatedTool": "deck-board-calculator",
+  "sources": [
+    {
+      "title": "Trex: How to space deck boards",
+      "url": "https://www.trex.com/deck-ideas/how-to-space-deck-boards/"
+    }
+  ],
+  "calculations": [
+    {
+      "calculator": "deck-board-calculator",
+      "input": {
+        "deckLengthFt": 16,
+        "deckWidthFt": 12,
+        "boardLengthFt": "16"
+      }
+    }
+  ],
+  "body": [
+    {
+      "type": "p",
+      "text": "For a 12 by 16 foot deck with 5.5 inch actual board width, 16 foot boards and 3/16 inch gaps, you need 26 boards. Run the boards along the 16 foot length and you need 1 board per row, with 26 rows across the 12 foot width."
+    },
+    {
+      "type": "p",
+      "text": "Use the [Deck Board Calculator](/deck-board-calculator) with your own measurements. Enter the deck length and width, the actual width of the board you plan to buy, the board length and the gap. The steps below show how the result is built, so you can check it by hand."
+    },
+    {
+      "type": "h2",
+      "text": "The worked example"
+    },
+    {
+      "type": "p",
+      "text": "This example uses a deck 16 feet long and 12 feet wide. The boards run along the 16 foot length, so the 12 foot width is the distance the rows cover."
+    },
+    {
+      "type": "h2",
+      "text": "How the count works"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Measure the width that runs across the boards and convert it to inches. Here the deck width is 12 ft.",
+        "Add the gap to the actual board width. The actual width is 5.5 in and the gap is 0.1875 in, so each board uses that combined width in its row.",
+        "Divide the deck width in inches by that combined width and round up. That gives the number of rows, which is 26 rows here.",
+        "Divide the deck length by the board length and round up. The 16 ft deck length matches the 16 ft board, so the result is 1 board per row.",
+        "Multiply rows by boards per row to get the number of boards, and multiply that by the board length to get the total length. That gives 26 boards and 416 linear ft of decking."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "So the answer is 26 boards, each 16 feet long, for a total of 416 linear ft of decking."
+    },
+    {
+      "type": "h2",
+      "text": "Actual width vs. nominal width"
+    },
+    {
+      "type": "p",
+      "text": "Lumber is sold by its nominal size, but the board you get is narrower than its name suggests. A deck board can be labeled with one width while its actual width is smaller."
+    },
+    {
+      "type": "p",
+      "text": "Always enter the actual width from the product tag or product page, not the nominal name. A larger width gives fewer rows, so using the nominal width could leave you short on boards."
+    },
+    {
+      "type": "h2",
+      "text": "Why the 3/16 inch gap matters"
+    },
+    {
+      "type": "p",
+      "text": "Decking needs a small space between boards so water can drain and the wood can swell and shrink. The calculator's default gap is 3/16 inch, the spacing used in Trex's published guidance."
+    },
+    {
+      "type": "p",
+      "text": "Every row adds one more gap, so the gaps add up across the deck. Check your product's instructions for the spacing it requires and enter that value."
+    },
+    {
+      "type": "h2",
+      "text": "Choosing a board length"
+    },
+    {
+      "type": "p",
+      "text": "Pick a board length that matches or fits your deck length. When the board length equals the deck length, each row is one board and there are no end joints."
+    },
+    {
+      "type": "p",
+      "text": "If you use shorter boards, each row needs more than one board joined at the ends, and some of each board is used up by the cut. A board exactly the deck length also leaves no room to trim the ends square, so add extra boards to cover trimming, cuts and damaged pieces."
+    },
+    {
+      "type": "h2",
+      "text": "Check the numbers before you buy"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Measure the deck twice and confirm which direction the boards will run.",
+        "Swapping the layout changes the count. Switch the length and width inputs for the other direction and run the calculator again.",
+        "Use the extra boards setting to add a margin for cuts and damaged pieces.",
+        "Check the actual width and board length printed on the product label, since products differ."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "If you are also planning the deck's surface area, the [Square Footage Calculator](/square-footage-calculator) gives the area in square feet."
+    },
+    {
+      "type": "h2",
+      "text": "FAQ"
+    },
+    {
+      "type": "h3",
+      "text": "Should I run deck boards across the width or along the length?"
+    },
+    {
+      "type": "p",
+      "text": "Many people run boards along the longer side because it means fewer joints, but the right direction depends on your design. Try both settings in the calculator and compare the board counts and lengths."
+    },
+    {
+      "type": "h3",
+      "text": "Do I need extra boards?"
+    },
+    {
+      "type": "p",
+      "text": "Usually, yes. Extra boards cover cuts, defects and pieces you set aside. Leave the extra setting at zero only if you are certain no boards will be cut or damaged."
+    },
+    {
+      "type": "h3",
+      "text": "Does the gap change the number of boards?"
+    },
+    {
+      "type": "p",
+      "text": "Yes. Each board in a row takes up its actual width plus the gap, so a wider gap means more rows across the deck. Enter the gap your product's instructions call for."
+    }
+  ]
+}
