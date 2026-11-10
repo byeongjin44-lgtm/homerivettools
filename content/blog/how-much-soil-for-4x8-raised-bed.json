@@ -1,0 +1,133 @@
+{
+  "slug": "how-much-soil-for-4x8-raised-bed",
+  "title": "How Much Soil for a 4x8 Raised Bed? Cubic Yards and Bags",
+  "description": "A 4x8 raised bed filled 12 inches deep needs 1.19 cu yd of soil in bulk, or 22 bags of 1.5 cu ft each. Here is how to work out the number for your own bed.",
+  "published": "2026-11-10",
+  "relatedTool": "mulch-calculator",
+  "sources": [
+    {
+      "title": "Mississippi State University Extension: Calculate mulch, soil needs for plant beds",
+      "url": "https://extension.msstate.edu/news/southern-gardening/1997/calculate-mulch-soil-needs-for-plant-beds"
+    }
+  ],
+  "calculations": [
+    {
+      "calculator": "mulch-calculator",
+      "input": {
+        "lengthFt": 8,
+        "widthFt": 4,
+        "depthIn": 12,
+        "bagCuFt": "1.5"
+      }
+    }
+  ],
+  "body": [
+    {
+      "type": "p",
+      "text": "A 4x8 raised bed filled 12 inches deep needs 1.19 cu yd of soil in bulk, or 22 bags if you buy 1.5 cu ft bags. Those figures come from the same volume math used for topsoil, compost and mulch."
+    },
+    {
+      "type": "p",
+      "text": "To run your own numbers, enter your bed's length, width, depth and bag size into the [Mulch & Soil Calculator](/mulch-calculator). The steps below show what the calculator does with those measurements, so you can check the result yourself."
+    },
+    {
+      "type": "h2",
+      "text": "The worked example: an 8 ft by 4 ft bed, 12 inches deep"
+    },
+    {
+      "type": "p",
+      "text": "The bed in this example is 8 feet long, 4 feet wide and 12 inches deep, and the bags are 1.5 cu ft each. The calculator works through it in four steps."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Find the bed area. Multiply the length by the width. For an 8 ft by 4 ft bed, the area is 32 sq ft.",
+        "Find the volume. Multiply the area by the depth. Because the depth is 12 inches, which is 1 foot, the volume is 32 cu ft.",
+        "Convert to cubic yards. Divide the volume in cubic feet by 27, since one cubic yard equals 27 cubic feet. That gives 1.19 cu yd of bulk soil.",
+        "Convert to bags. Multiply the cubic yards by 27, then divide by the bag size of 1.5 cu ft. With 1.5 cu ft bags, the calculator gives 22 bags."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The calculator's formula for bulk material is area in square feet times depth in inches, divided by 324. The 324 comes from the fact that one cubic yard covers 324 sq ft at a depth of one inch. You can use either method and reach the same answer."
+    },
+    {
+      "type": "h2",
+      "text": "Bulk or bags: which to choose"
+    },
+    {
+      "type": "p",
+      "text": "Bulk soil is delivered loose, usually by the cubic yard. It suits larger beds, or several beds at once, if you have a place for a delivery and a way to move the soil to the beds. Bags suit a single small bed or a site where a truck cannot reach."
+    },
+    {
+      "type": "p",
+      "text": "Bags come in several sizes. The calculator supports 1.5 cu ft, 2 cu ft and 3 cu ft bags. The bag count changes with the size you pick, so run the calculator again if you switch sizes."
+    },
+    {
+      "type": "h2",
+      "text": "Common mistakes with raised bed soil"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Using feet instead of inches for depth. A depth of 12 inches is 1 foot, but entering 12 as feet would give a bed far deeper than you planned.",
+        "Measuring the outside of the bed instead of the inside. Measure the space the soil will fill.",
+        "Assuming every bag holds the same amount. Bag sizes differ between brands, so check the cubic feet printed on the bag.",
+        "Forgetting that soil settles. Plan for the level to drop a little after watering and the first season, and check the bed after it settles.",
+        "Buying only the exact amount. If a bag count is close to a whole number, it is often wise to have a few extra bags on hand for uneven spots."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Check the label before you buy"
+    },
+    {
+      "type": "p",
+      "text": "Always check the coverage or yield printed on the product label, because products differ. The calculator uses standard volume formulas, but the actual amount in a bag or the coverage of a product can vary by brand and by how it is packed. If the label gives a different yield, use that number for your purchase."
+    },
+    {
+      "type": "h2",
+      "text": "Related estimates"
+    },
+    {
+      "type": "p",
+      "text": "The same method works for mulch around the bed. If you are covering a larger area, see [How Much Mulch for 100 Square Feet?](/blog/how-much-mulch-for-100-square-feet) for a bulk and bag example. To find the area of an odd-shaped space, the [Square Footage Calculator](/square-footage-calculator) handles rectangles, triangles and circles. For a room-sized measurement, see [How to Calculate Square Footage of a Room](/blog/how-to-calculate-square-footage-of-a-room)."
+    },
+    {
+      "type": "h2",
+      "text": "FAQ"
+    },
+    {
+      "type": "h3",
+      "text": "Can I use the same calculation for mulch or compost?"
+    },
+    {
+      "type": "p",
+      "text": "Yes. Topsoil, compost and mulch all use the same volume formula in the Mulch & Soil Calculator. Enter your measurements, then check the label on the product you choose, since coverage varies by product."
+    },
+    {
+      "type": "h3",
+      "text": "What if my raised bed is a different size or depth?"
+    },
+    {
+      "type": "p",
+      "text": "Measure the inside length, the inside width and the depth you plan to fill. Enter those values into the [Mulch & Soil Calculator](/mulch-calculator) and it will give you the bulk and bag amounts for your bed."
+    },
+    {
+      "type": "h3",
+      "text": "Why should I keep a few extra bags?"
+    },
+    {
+      "type": "p",
+      "text": "Soil settles, spills happen and uneven corners can need a little more. A small extra amount is a common way to avoid a second trip, but the exact extra depends on your bed and your habits."
+    },
+    {
+      "type": "h3",
+      "text": "Does the calculator tell me how many bags to buy for mulch too?"
+    },
+    {
+      "type": "p",
+      "text": "Yes. The calculator uses the same steps for mulch, topsoil and compost. Choose the bag size that matches what you can buy, then check the label on the bag for its actual volume."
+    }
+  ]
+}
