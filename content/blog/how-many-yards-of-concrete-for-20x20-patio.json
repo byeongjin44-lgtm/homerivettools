@@ -1,0 +1,146 @@
+{
+  "slug": "how-many-yards-of-concrete-for-20x20-patio",
+  "title": "How Many Yards of Concrete for a 20x20 Patio? Cubic Yards and Bags",
+  "description": "A 20x20 patio 4 inches thick needs 4.94 cubic yards of concrete, or 223 bags of 80 lb mix. Here is the math and what to check before ordering.",
+  "published": "2026-11-11",
+  "relatedTool": "concrete-calculator",
+  "sources": [
+    {
+      "title": "Quikrete Concrete Mix No. 1101 data sheet",
+      "url": "https://www.quikrete.com/pdfs/data_sheet-concrete%20mix%201101.pdf"
+    }
+  ],
+  "calculations": [
+    {
+      "calculator": "concrete-calculator",
+      "input": {
+        "lengthFt": 20,
+        "widthFt": 20,
+        "thicknessIn": 4,
+        "bagLb": "80"
+      }
+    }
+  ],
+  "body": [
+    {
+      "type": "p",
+      "text": "A 20x20 patio 4 inches thick needs 4.94 cubic yards of concrete. If you are buying bagged mix instead of ready-mix, that works out to 223 bags of 80 lb concrete."
+    },
+    {
+      "type": "p",
+      "text": "You can run your own measurements in the [Concrete Calculator](/concrete-calculator) by entering length, width and thickness. The rest of this page shows how the result is worked out, so you can check it by hand."
+    },
+    {
+      "type": "h2",
+      "text": "How the calculation works"
+    },
+    {
+      "type": "p",
+      "text": "The calculator uses four steps. Each one takes the output of the step before it."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Multiply length by width, then by thickness in inches, and divide by 12. This gives the volume in cubic feet. For this 20 ft by 20 ft patio at 4 inches thick, the result is 133.33 cu ft.",
+        "Divide the cubic feet by 27 to convert to cubic yards. That gives 4.94 cu yd, which is the number to give a ready-mix supplier.",
+        "Divide the cubic feet by the bag yield. An 80 lb bag yields 0.6 cu ft, so the exact count is 222.2 bags.",
+        "Round the bag count up to the next whole bag. The calculator shows 223 bags to buy."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Rounding up matters. A partial bag is still a bag you have to buy, so the calculator never rounds down."
+    },
+    {
+      "type": "h2",
+      "text": "Ready-mix or bags"
+    },
+    {
+      "type": "p",
+      "text": "Ready-mix is sold by the cubic yard, so the 4.94 cu yd figure is what you need for a truck order. Ask your supplier how they handle partial yards and whether they have a minimum load."
+    },
+    {
+      "type": "p",
+      "text": "Bagged mix is sold by the bag, so for an 80 lb product you would buy 223 bags. Bags are easier to handle in small batches and fit places a truck cannot reach, but 223 bags is a lot of lifting and mixing. Plan for delivery, stacking and how long the work will take before the mix sets."
+    },
+    {
+      "type": "p",
+      "text": "If you want a smaller example to compare, see [how many bags of concrete for a 10x10 slab](/blog/how-many-bags-of-concrete-for-10x10-slab)."
+    },
+    {
+      "type": "h2",
+      "text": "Check the yield on your bag"
+    },
+    {
+      "type": "p",
+      "text": "The 0.6 cu ft yield for an 80 lb bag is the figure the calculator uses. Yields differ between products and brands, so read the coverage or yield printed on the label of the bag you plan to buy. If the label shows a different yield, divide your cubic feet by that number instead and round up."
+    },
+    {
+      "type": "h2",
+      "text": "Pitfalls that lead to short orders"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Mixing units. The calculator expects length and width in feet and thickness in inches. Entering thickness in feet, or length in inches, gives a wrong answer.",
+        "Skipping spillage. The calculator uses 0 % extra by default. If you expect waste or an uneven pour, enter an allowance in the Extra for spillage field and compare the result with your supplier's ordering increments.",
+        "Assuming one thickness everywhere. If parts of the patio are a different thickness, measure each section separately and add the volumes together.",
+        "Forgetting that bags round up. The bag count is always a whole number, so check whether the last bag leaves you short for the final section."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Before you order"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Measure the length and width in feet and the thickness in inches.",
+        "Enter the measurements in the [Concrete Calculator](/concrete-calculator) and note the cubic yards and bag count.",
+        "Check the yield printed on the product label and recalculate if it differs from the calculator's figure.",
+        "Add an allowance for spillage if you want a margin, and round to what your supplier sells.",
+        "Confirm the thickness with your project plans. If you are unsure which thickness applies, ask a qualified professional before buying."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The calculator estimates quantity only. It does not cover what goes underneath the slab or how the slab should be reinforced."
+    },
+    {
+      "type": "h2",
+      "text": "FAQ"
+    },
+    {
+      "type": "h3",
+      "text": "Do I need extra concrete for spillage?"
+    },
+    {
+      "type": "p",
+      "text": "Many people add a margin for spills, uneven edges and small mistakes. Enter an allowance in the Extra for spillage field of the [Concrete Calculator](/concrete-calculator) to see how it changes the result, then check it against your supplier's minimum load."
+    },
+    {
+      "type": "h3",
+      "text": "Can I use the calculator for a patio that is not a rectangle?"
+    },
+    {
+      "type": "p",
+      "text": "The calculator works with a rectangle. For an irregular shape, split the area into rectangles and triangles, measure each one, and add the volumes. The [Square Footage Calculator](/square-footage-calculator) can help with the area of each piece."
+    },
+    {
+      "type": "h3",
+      "text": "Is it cheaper to mix my own bags than to order ready-mix?"
+    },
+    {
+      "type": "p",
+      "text": "This page does not compare prices. Bags and ready-mix are sold in different ways, so get quotes for the quantity you need from local suppliers and compare them."
+    },
+    {
+      "type": "h3",
+      "text": "Does the bag count change if I use a different bag size?"
+    },
+    {
+      "type": "p",
+      "text": "Yes. The calculator divides the cubic feet by the yield of the bag you choose. A bag with a different yield gives a different count, so select the size you plan to buy and check its label."
+    }
+  ]
+}
