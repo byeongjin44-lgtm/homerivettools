@@ -5,12 +5,57 @@ import { JsonLd } from "@/components/JsonLd";
 import { CalculatorTool } from "@/components/CalculatorTool";
 import { SITE_URL, getRelatedTools, type ToolDefinition } from "@/lib/site-config";
 import { blogPath, getPostsForTool } from "@/lib/blog";
-import { CALCULATOR_CONTENT } from "@/lib/calculator-content";
+import { CALCULATOR_CONTENT, type CalculatorContent } from "@/lib/calculator-content";
 import { INSULATION_R_PER_INCH_REFERENCE } from "@/lib/calc/formulas";
-import { defaultValues, formatNumber, getCalculator, isFieldActive } from "@/lib/calc/registry";
+import { defaultValues, formatNumber, getCalculator, isFieldActive, runCalculator } from "@/lib/calc/registry";
 
 const H2 = "mb-2 text-lg font-semibold text-zinc-900 dark:text-zinc-50";
 const LINK = "font-medium text-zinc-900 underline dark:text-zinc-50";
+
+function QuickTableSection({ slug, table }: { slug: string; table: NonNullable<CalculatorContent["quickTable"]> }) {
+  // Every cell comes from the calculator code at build time, like the Example section.
+  const runs = table.rows.map((r) => ({ label: r.label, results: runCalculator(slug, r.input) }));
+  const headers = table.columns.map((key) => {
+    const row = runs[0].results.find((x) => x.key === key);
+    if (!row) throw new Error(`${slug} has no result "${key}"`);
+    return row.unit;
+  });
+  return (
+    <section>
+      <h2 className={H2}>{table.heading}</h2>
+      <p className="mb-2">{table.intro}</p>
+      <div className="overflow-x-auto">
+        <table className="w-full max-w-xl text-left">
+          <thead>
+            <tr className="border-b border-zinc-200 dark:border-zinc-800">
+              <th className="py-1 pr-4 font-medium">{table.rowHeader}</th>
+              {headers.map((h) => (
+                <th key={h} className="py-1 pr-4 font-medium">
+                  {h}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {runs.map((run) => (
+              <tr key={run.label} className="border-b border-zinc-100 dark:border-zinc-800/60">
+                <td className="py-1 pr-4">{run.label}</td>
+                {table.columns.map((key) => {
+                  const row = run.results.find((x) => x.key === key)!;
+                  return (
+                    <td key={key} className="py-1 pr-4">
+                      {formatNumber(row.value, row.digits)}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
 
 export function ToolPageLayout({ tool }: { tool: ToolDefinition }) {
   const content = CALCULATOR_CONTENT[tool.slug];
@@ -74,6 +119,8 @@ export function ToolPageLayout({ tool }: { tool: ToolDefinition }) {
             .
           </p>
         </section>
+
+        {content.quickTable && <QuickTableSection slug={tool.slug} table={content.quickTable} />}
 
         {tool.slug === "insulation-calculator" && (
           <section>

@@ -134,7 +134,7 @@ export const TOOLS: ToolDefinition[] = [
     shortDescription: "Area of a rectangle, triangle or circle in sq ft, sq yd and m².",
     title: `Square Footage Calculator (Rectangle, Triangle, Circle) — ${SITE_NAME}`,
     metaDescription:
-      "Calculate square footage for rectangles, triangles and circles, with the result in square feet, square yards and square meters. Add up rooms for any project.",
+      "Calculate square footage for rectangles, triangles and circles in square feet, square yards and square meters, with a chart of common sizes such as 12x60 and 24x24.",
     related: ["paint-calculator", "flooring-calculator"],
     sources: [
       {
@@ -159,9 +159,9 @@ export const TOOLS: ToolDefinition[] = [
     category: "Concrete & Landscaping",
     name: "Gravel & Sand Calculator",
     shortDescription: "Cubic yards and tons of gravel, crushed stone or sand.",
-    title: `Gravel Calculator: Cubic Yards & Tons — ${SITE_NAME}`,
+    title: `Gravel Calculator: Cubic Yards & Tons, With a Yards-to-Tons Chart — ${SITE_NAME}`,
     metaDescription:
-      "Calculate gravel, crushed stone or sand in cubic yards and tons for a driveway, path or patio base. Adjustable weight per cubic yard for your supplier's material.",
+      "Calculate gravel, crushed stone or sand in cubic yards and tons for a driveway, path or patio base, with a chart of common sizes and how to convert cubic yards to tons.",
     related: ["mulch-calculator", "concrete-calculator"],
     sources: [{ title: "Mulch Pros: Material weight and coverage", url: "https://mulchpros.com/material-weight-and-coverage/" }],
   }),

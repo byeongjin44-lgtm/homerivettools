@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { ADSENSE_CLIENT, SITE_URL, TOOLS, TOOL_CATEGORIES, adsTxt } from "@/lib/site-config";
-import { CALCULATORS } from "@/lib/calc/registry";
+import { CALCULATORS, runCalculator } from "@/lib/calc/registry";
 import { CALCULATOR_CONTENT } from "@/lib/calculator-content";
 import { findForbiddenTopics } from "@/lib/content-policy";
 import { ogImageKey, ogImagePath } from "@/lib/og";
@@ -45,9 +45,33 @@ describe("site", () => {
 
   it("keeps calculator page text within the content policy", () => {
     for (const [slug, c] of Object.entries(CALCULATOR_CONTENT)) {
-      const text = [...c.howItWorks, ...c.tips, ...c.faq.flatMap((f) => [f.q, f.a]), c.scope ?? ""].join("\n");
+      const table = c.quickTable ? [c.quickTable.heading, c.quickTable.intro, ...c.quickTable.rows.map((r) => r.label)] : [];
+      const text = [...c.howItWorks, ...c.tips, ...c.faq.flatMap((f) => [f.q, f.a]), c.scope ?? "", ...table].join("\n");
       expect(findForbiddenTopics(text), slug).toEqual([]);
     }
+  });
+});
+
+describe("quick-reference tables", () => {
+  it("only use inputs and result columns the calculator code knows", () => {
+    for (const [slug, c] of Object.entries(CALCULATOR_CONTENT)) {
+      if (!c.quickTable) continue;
+      for (const r of c.quickTable.rows) {
+        const keys = runCalculator(slug, r.input).map((x) => x.key);
+        for (const col of c.quickTable.columns) expect(keys, `${slug} ${r.label}`).toContain(col);
+      }
+    }
+  });
+
+  it("match the calculator for known sizes", () => {
+    const sq = CALCULATOR_CONTENT["square-footage-calculator"];
+    const row = sq.quickTable!.rows.find((r) => r.label === "12 × 60 ft")!;
+    expect(runCalculator("square-footage-calculator", row.input)[0]).toMatchObject({ key: "sqFt", value: 720 });
+    const faq = sq.faq.find((f) => f.q === "How many square feet is 12x60?")!;
+    expect(faq.a).toContain("720 sq ft");
+    const gravel = CALCULATOR_CONTENT["gravel-calculator"].faq.find((f) => f.q.startsWith("How do I convert cubic yards"))!;
+    expect(gravel.a).toContain("1 cubic yard is 1.4 tons");
+    expect(gravel.a).toContain("10 cubic yards are 14 tons");
   });
 });
 

@@ -3,12 +3,47 @@
  * what `src/lib/calc/formulas.ts` does — the worked example on each page is computed live from
  * the registry, so it can never drift from the formula.
  */
+import { GRAVEL_TONS_PER_CU_YD } from "@/lib/calc/formulas";
+import { formatNumber, runCalculator } from "@/lib/calc/registry";
+
+/** A quick-reference table. Every cell is computed from the calculator code at build time. */
+export type QuickTable = {
+  heading: string;
+  intro: string;
+  /** Header of the first column (the scenario). */
+  rowHeader: string;
+  rows: { label: string; input: Record<string, number | string> }[];
+  /** Result row keys (from the registry) shown as columns, in order. */
+  columns: string[];
+};
+
+/** The headline number of a calculator run, formatted as on the page (used in FAQ answers). */
+function result(slug: string, input: Record<string, number | string>, key: string): string {
+  const row = runCalculator(slug, input).find((r) => r.key === key);
+  if (!row) throw new Error(`${slug} has no result "${key}"`);
+  return `${formatNumber(row.value, row.digits)} ${row.unit}`;
+}
+
+const tonsFor = (cuYd: number) => formatNumber(cuYd * GRAVEL_TONS_PER_CU_YD, 2);
+const cuYdFor = (tons: number) => formatNumber(tons / GRAVEL_TONS_PER_CU_YD, 2);
+const sqFtPerCuYdAt = (depthIn: number) => formatNumber(324 / depthIn, 0);
+
+const rect = (lengthFt: number, widthFt: number) => ({
+  label: `${lengthFt} × ${widthFt} ft`,
+  input: { shape: "rectangle", lengthFt, widthFt },
+});
+const pad = (lengthFt: number, widthFt: number, depthIn: number) => ({
+  label: `${lengthFt} × ${widthFt} ft, ${depthIn} in deep`,
+  input: { lengthFt, widthFt, depthIn },
+});
+
 export type CalculatorContent = {
   howItWorks: string[];
   tips: string[];
   faq: { q: string; a: string }[];
   /** What the calculator deliberately does not cover. */
   scope?: string;
+  quickTable?: QuickTable;
 };
 
 export const CALCULATOR_CONTENT: Record<string, CalculatorContent> = {
@@ -133,7 +168,30 @@ export const CALCULATOR_CONTENT: Record<string, CalculatorContent> = {
         q: "How do I convert inches to feet?",
         a: "Divide by 12. For example, 10 ft 6 in is 10.5 ft.",
       },
+      {
+        q: "How many square feet is 12x60?",
+        a: `12 ft × 60 ft = ${result("square-footage-calculator", rect(12, 60).input, "sqFt")}, which is ${result("square-footage-calculator", rect(12, 60).input, "sqYd")} or ${result("square-footage-calculator", rect(12, 60).input, "sqM")}.`,
+      },
+      {
+        q: "How do I convert square feet to square yards?",
+        a: "Divide by 9, because one square yard is 3 ft × 3 ft. Carpet and some sod are sold by the square yard.",
+      },
+      {
+        q: "How do I convert square feet to square meters?",
+        a: "Multiply by 0.0929 (the NIST conversion factor, rounded). The calculator shows square meters for every shape.",
+      },
+      {
+        q: "How do I find the square footage of an L-shaped room?",
+        a: "Split the room into two rectangles that do not overlap, work out each one with length × width, and add the two areas together.",
+      },
     ],
+    quickTable: {
+      heading: "Square footage of common sizes",
+      intro: "Rectangles measured in feet. Use the calculator above for any other size or shape.",
+      rowHeader: "Size",
+      rows: [rect(10, 10), rect(10, 12), rect(12, 12), rect(12, 14), rect(12, 60), rect(14, 70), rect(16, 80), rect(20, 20), rect(24, 24), rect(30, 40)],
+      columns: ["sqFt", "sqYd", "sqM"],
+    },
   },
   "wallpaper-calculator": {
     howItWorks: [
@@ -169,7 +227,41 @@ export const CALCULATOR_CONTENT: Record<string, CalculatorContent> = {
         q: "How many tons is a cubic yard of gravel?",
         a: "Roughly 1.3–1.4 tons for typical gravel, but it varies by material. Use your supplier's figure when you have it.",
       },
+      {
+        q: "How do I convert cubic yards of gravel to tons?",
+        a: `Multiply cubic yards by the weight per cubic yard. At the default ${GRAVEL_TONS_PER_CU_YD} tons, 1 cubic yard is ${tonsFor(1)} tons, 5 cubic yards are ${tonsFor(5)} tons and 10 cubic yards are ${tonsFor(10)} tons. If your supplier gives a different weight, enter it in the weight field.`,
+      },
+      {
+        q: "How do I convert tons of gravel to cubic yards?",
+        a: `Divide tons by the weight per cubic yard. At ${GRAVEL_TONS_PER_CU_YD} tons per cubic yard, 10 tons is about ${cuYdFor(10)} cubic yards and 20 tons is about ${cuYdFor(20)} cubic yards.`,
+      },
+      {
+        q: "How many square feet does a cubic yard of gravel cover?",
+        a: `One cubic yard covers 324 sq ft at 1 inch deep, so about ${sqFtPerCuYdAt(2)} sq ft at 2 in, ${sqFtPerCuYdAt(3)} sq ft at 3 in and ${sqFtPerCuYdAt(4)} sq ft at 4 in.`,
+      },
+      {
+        q: "Should I order by the ton or by the yard?",
+        a: "Either works — suppliers quote one or the other. The calculator gives both, so you can compare prices and order in the unit your supplier uses.",
+      },
     ],
+    quickTable: {
+      heading: "Gravel for common areas and depths",
+      intro: `Tons use the default ${GRAVEL_TONS_PER_CU_YD} tons per cubic yard. Your stone may weigh more or less — ask your supplier and use the calculator above with their figure.`,
+      rowHeader: "Area and depth",
+      rows: [
+        pad(10, 10, 2),
+        pad(10, 10, 3),
+        pad(3, 20, 3),
+        pad(12, 12, 4),
+        pad(10, 20, 3),
+        pad(10, 20, 4),
+        pad(20, 20, 3),
+        pad(20, 20, 4),
+        pad(24, 24, 4),
+        pad(12, 50, 4),
+      ],
+      columns: ["cuYd", "tons"],
+    },
   },
   "deck-board-calculator": {
     howItWorks: [
