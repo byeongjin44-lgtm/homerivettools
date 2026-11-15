@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { ADSENSE_CLIENT, SITE_URL, TOOLS, TOOL_CATEGORIES, adsTxt } from "@/lib/site-config";
+import { ADSENSE_CLIENT, SITE_DESCRIPTION, SITE_URL, TOOLS, TOOL_CATEGORIES, adsTxt } from "@/lib/site-config";
 import { CALCULATORS, runCalculator } from "@/lib/calc/registry";
 import { CALCULATOR_CONTENT } from "@/lib/calculator-content";
 import { findForbiddenTopics } from "@/lib/content-policy";
@@ -16,6 +16,13 @@ describe("site", () => {
     expect(CALCULATORS.map((c) => c.slug).sort()).toEqual(slugs);
     expect(Object.keys(CALCULATOR_CONTENT).sort()).toEqual(slugs);
     expect(generateStaticParams().map((p) => p.calculator).sort()).toEqual(slugs);
+  });
+
+  it("keeps meta descriptions within search engine limits (Bing flags over 160 characters)", () => {
+    for (const d of [SITE_DESCRIPTION, ...TOOLS.map((t) => t.metaDescription)]) {
+      expect(d.length, d).toBeGreaterThanOrEqual(50);
+      expect(d.length, d).toBeLessThanOrEqual(160);
+    }
   });
 
   it("cites https sources for every calculator", () => {

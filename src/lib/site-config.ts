@@ -25,7 +25,7 @@ export function adsTxt(client: string | null = ADSENSE_CLIENT): string {
 
 export const SITE_TITLE = `${SITE_NAME} — Free Home Project Material Calculators`;
 export const SITE_DESCRIPTION =
-  "10 free calculators for home and garden projects: paint, concrete, tile, flooring, mulch, square footage, wallpaper, gravel, deck boards and insulation. Formulas from manufacturer data.";
+  "Free home and garden calculators for paint, concrete, tile, flooring, mulch, gravel, deck boards and insulation, using manufacturer data.";
 
 export const TOOL_CATEGORIES = ["Walls & Floors", "Concrete & Landscaping", "Deck & Insulation", "Measuring"] as const;
 
@@ -64,7 +64,7 @@ export const TOOLS: ToolDefinition[] = [
     shortDescription: "How many gallons of paint a room needs, after doors and windows.",
     title: `Paint Calculator: How Many Gallons for a Room? — ${SITE_NAME}`,
     metaDescription:
-      "Estimate how many gallons of paint you need for a room. Enter the room size, doors, windows and coats; the calculator deducts openings and rounds up to whole gallons.",
+      "Estimate the gallons of paint a room needs. Enter the room size, doors, windows and coats; coverage defaults to 350 sq ft per gallon.",
     related: ["wallpaper-calculator", "square-footage-calculator"],
     sources: [SW_PAINT, SW_ESTIMATE],
   }),
@@ -118,7 +118,7 @@ export const TOOLS: ToolDefinition[] = [
     shortDescription: "Cubic yards or bags of mulch, topsoil or compost for a bed.",
     title: `Mulch Calculator: Cubic Yards & Bags for a Garden Bed — ${SITE_NAME}`,
     metaDescription:
-      "Find how much mulch, topsoil or compost a garden bed needs in cubic yards or 1.5, 2 and 3 cu ft bags, using the extension-service rule of 324 sq ft per yard per inch.",
+      "How much mulch, topsoil or compost a bed needs in cubic yards or 1.5, 2 and 3 cu ft bags, using the rule of 324 sq ft per yard per inch.",
     related: ["gravel-calculator", "square-footage-calculator"],
     sources: [
       {
@@ -134,7 +134,7 @@ export const TOOLS: ToolDefinition[] = [
     shortDescription: "Area of a rectangle, triangle or circle in sq ft, sq yd and m².",
     title: `Square Footage Calculator (Rectangle, Triangle, Circle) — ${SITE_NAME}`,
     metaDescription:
-      "Calculate square footage for rectangles, triangles and circles in square feet, square yards and square meters, with a chart of common sizes such as 12x60 and 24x24.",
+      "Square footage of rectangles, triangles and circles in sq ft, sq yd and m², with a chart of common sizes such as 12x60 and 24x24.",
     related: ["paint-calculator", "flooring-calculator"],
     sources: [
       {
@@ -161,7 +161,7 @@ export const TOOLS: ToolDefinition[] = [
     shortDescription: "Cubic yards and tons of gravel, crushed stone or sand.",
     title: `Gravel Calculator: Cubic Yards & Tons, With a Yards-to-Tons Chart — ${SITE_NAME}`,
     metaDescription:
-      "Calculate gravel, crushed stone or sand in cubic yards and tons for a driveway, path or patio base, with a chart of common sizes and how to convert cubic yards to tons.",
+      "Gravel, crushed stone or sand in cubic yards and tons for a driveway, path or patio, with a chart of common sizes and yards-to-tons help.",
     related: ["mulch-calculator", "concrete-calculator"],
     sources: [{ title: "Mulch Pros: Material weight and coverage", url: "https://mulchpros.com/material-weight-and-coverage/" }],
   }),
@@ -183,7 +183,7 @@ export const TOOLS: ToolDefinition[] = [
     shortDescription: "Thickness for a target R-value and packages to buy.",
     title: `Insulation Calculator: R-Value, Thickness & Packages — ${SITE_NAME}`,
     metaDescription:
-      "Find the insulation thickness that reaches a target R-value and how many packages to buy, with an R-value-per-inch reference table based on U.S. Department of Energy data.",
+      "Find the insulation thickness for a target R-value and how many packages to buy, with an R-value-per-inch table from U.S. Department of Energy data.",
     related: ["square-footage-calculator"],
     sources: [
       { title: "U.S. Department of Energy: Guide to home insulation", url: "https://www.energy.gov/sites/prod/files/guide_to_home_insulation.pdf" },
