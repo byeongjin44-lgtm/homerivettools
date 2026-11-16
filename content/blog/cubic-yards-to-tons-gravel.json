@@ -1,0 +1,147 @@
+{
+  "slug": "cubic-yards-to-tons-gravel",
+  "title": "Cubic Yards to Tons: How Much Gravel Weighs Per Cubic Yard",
+  "description": "To convert cubic yards of gravel to tons, multiply by the weight per cubic yard. A 20x10 ft area 4 inches deep is 3.46 tons at the 1.4 tons per cubic yard default.",
+  "published": "2026-11-16",
+  "relatedTool": "gravel-calculator",
+  "sources": [
+    {
+      "title": "Mulch Pros: Material weight and coverage",
+      "url": "https://mulchpros.com/material-weight-and-coverage/"
+    }
+  ],
+  "calculations": [
+    {
+      "calculator": "gravel-calculator",
+      "input": {
+        "lengthFt": 20,
+        "widthFt": 10,
+        "depthIn": 4
+      }
+    }
+  ],
+  "body": [
+    {
+      "type": "p",
+      "text": "To convert cubic yards of gravel to tons, multiply the cubic yards by the weight of one cubic yard of that gravel, in tons. The calculator's default planning figure is 1.4 tons per cubic yard, but the real number depends on the stone, so use the weight your supplier gives you."
+    },
+    {
+      "type": "p",
+      "text": "You can get both the cubic yards and the tons from the [Gravel & Sand Calculator](/gravel-calculator). Enter the length, width, depth and the weight per cubic yard, and it returns the volume and the weight. Use your own measurements. The example below shows the math, and your project will have its own numbers."
+    },
+    {
+      "type": "h2",
+      "text": "The worked example: 20 ft by 10 ft, 4 inches deep"
+    },
+    {
+      "type": "p",
+      "text": "Say the area is 20 feet long and 10 feet wide, covered 4 inches deep. Here are the steps the calculator follows."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Find the area. Multiply length by width: 20 ft x 10 ft gives 200 sq ft.",
+        "Find the volume in cubic feet. Multiply the area by the depth in feet. Four inches is one-third of a foot, so 200 sq ft x 4 in, converted to feet, gives 66.7 cu ft.",
+        "Convert to cubic yards. A cubic yard is 27 cubic feet, so divide the cubic feet by 27. That gives 2.47 cu yd.",
+        "Convert to tons. Multiply the cubic yards by the weight per cubic yard. At 1.4 tons per cubic yard, 2.47 cu yd comes to 3.46 tons."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "So this area needs about 3.46 tons of gravel at the 1.4 ton planning figure. If your supplier sells by the cubic yard instead of by the ton, the 2.47 cu yd figure is the number to ask about."
+    },
+    {
+      "type": "h2",
+      "text": "Why the weight per cubic yard varies"
+    },
+    {
+      "type": "p",
+      "text": "A cubic yard measures volume, not weight. The same volume can weigh more or less depending on the material, the size of the pieces, and how much air sits between them. Denser stone weighs more per cubic yard than lighter, more open material."
+    },
+    {
+      "type": "p",
+      "text": "Common materials differ, and no single number fits all of them:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Crushed stone and gravel: weight varies with rock type and particle size, so get the figure for your specific product.",
+        "Sand: weight per cubic yard depends on the sand and its moisture. Damp sand can bulk up, meaning it takes up more volume than the same sand when dry, so an estimate based on dry sand can be off.",
+        "Pea gravel and decorative stone: weight depends on the stone type, so check the supplier's figure.",
+        "Recycled concrete or other processed aggregate: weight varies by source, so ask for the number."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Because the tonnage comes directly from the weight per cubic yard, a material that weighs less per cubic yard gives you fewer tons for the same volume. The weight figure matters as much as the volume."
+    },
+    {
+      "type": "h2",
+      "text": "Use your supplier's weight"
+    },
+    {
+      "type": "p",
+      "text": "The most reliable number is the weight your supplier lists for the exact product you are buying. Many yards publish weight per cubic yard for each material, and some will weigh a load on their scale."
+    },
+    {
+      "type": "p",
+      "text": "When you call, ask what the weight per cubic yard is for this specific material, whether that figure is for dry or as-delivered stone, and whether they sell by the ton or by the cubic yard. Then enter that weight into the calculator in place of the default."
+    },
+    {
+      "type": "p",
+      "text": "If you cannot get a figure, 1.4 tons per cubic yard is a reasonable starting point for planning. Ask about minimum loads and delivery charges before you decide how much to order."
+    },
+    {
+      "type": "h2",
+      "text": "Check your measurements and the product label"
+    },
+    {
+      "type": "p",
+      "text": "Measure the area carefully and use the depth you actually want. Gravel settles and compacts after it is spread, so decide whether your depth is the settled depth or the loose depth, and measure to match."
+    },
+    {
+      "type": "p",
+      "text": "Also check the coverage or yield printed on any bagged product you buy, because products differ. Bagged stone usually lists a coverage figure for a set depth, and that label figure is more accurate for your bag than any general table."
+    },
+    {
+      "type": "p",
+      "text": "For more examples of this math, see [Pea Gravel Tons and Cubic Yards](/blog/how-much-pea-gravel-for-10x10-area) and [How Much Gravel for a Driveway? Example in Tons](/blog/how-much-gravel-for-driveway-12x50)."
+    },
+    {
+      "type": "h2",
+      "text": "FAQ"
+    },
+    {
+      "type": "h3",
+      "text": "Is a cubic yard of gravel always 1.4 tons?"
+    },
+    {
+      "type": "p",
+      "text": "No. 1.4 tons is the calculator's default planning figure. The exact weight depends on the stone, its moisture and how the supplier measures it, so use their number when you have it."
+    },
+    {
+      "type": "h3",
+      "text": "How do I convert cubic feet to tons of gravel?"
+    },
+    {
+      "type": "p",
+      "text": "Divide the cubic feet by 27 to get cubic yards, then multiply by the weight per cubic yard in tons. The [Gravel & Sand Calculator](/gravel-calculator) does both steps for you."
+    },
+    {
+      "type": "h3",
+      "text": "Does wet gravel weigh more than dry gravel?"
+    },
+    {
+      "type": "p",
+      "text": "Moisture can add weight, so wet material may weigh more than the dry figure. Ask your supplier whether their number is for dry or as-delivered material."
+    },
+    {
+      "type": "h3",
+      "text": "Should I order extra gravel?"
+    },
+    {
+      "type": "p",
+      "text": "Many people add a small margin because gravel settles and the depth may not be perfectly even. Check your supplier's minimum load and delivery terms before deciding."
+    }
+  ]
+}
