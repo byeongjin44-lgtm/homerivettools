@@ -1,0 +1,153 @@
+{
+  "slug": "how-much-insulation-do-i-need-for-walls",
+  "title": "How Much Insulation Do I Need for Walls? R-Value and Packages",
+  "description": "Divide your target R-value by the product's R-value per inch for thickness, then divide wall area by coverage per package for the count. Worked example inside.",
+  "published": "2026-11-19",
+  "relatedTool": "insulation-calculator",
+  "sources": [
+    {
+      "title": "U.S. Department of Energy: Guide to home insulation",
+      "url": "https://www.energy.gov/sites/prod/files/guide_to_home_insulation.pdf"
+    }
+  ],
+  "calculations": [
+    {
+      "calculator": "insulation-calculator",
+      "input": {
+        "areaSqFt": 400,
+        "targetR": 13,
+        "rPerInch": 3.7,
+        "sqFtPerPackage": 40
+      }
+    }
+  ],
+  "body": [
+    {
+      "type": "p",
+      "text": "To find how much wall insulation you need, divide your target R-value by the product's R-value per inch to get the thickness. Then divide the wall area by the coverage printed on each package to get the number of packages. The [Insulation Calculator](/insulation-calculator) does both steps for you, but it helps to understand the math so you can check the result."
+    },
+    {
+      "type": "h2",
+      "text": "Measure the wall area you are insulating"
+    },
+    {
+      "type": "p",
+      "text": "Start with the square footage of the walls you plan to fill. For a rectangular wall, multiply the length by the height. Add up each wall section, then subtract the windows and doors, since those openings are not filled with the same product."
+    },
+    {
+      "type": "p",
+      "text": "Measure in feet and round your final square footage up, not down. Measure the full wall first and subtract openings afterward so you can see how much each one changes the total."
+    },
+    {
+      "type": "h2",
+      "text": "Choose your target R-value"
+    },
+    {
+      "type": "p",
+      "text": "R-value measures how well a material resists heat flow. Higher numbers mean more resistance. The R-value you need depends on your climate and on the requirements that apply to your home, so ask a qualified professional before you pick a target. This page only covers the quantity math once you know your number."
+    },
+    {
+      "type": "p",
+      "text": "You also need the R-value per inch of the product you plan to buy. That number is printed on the product label, and it is the one to use. Typical ranges for different insulation types are useful for a rough comparison, but they are not a substitute for the rating on your package."
+    },
+    {
+      "type": "h2",
+      "text": "Calculate the thickness"
+    },
+    {
+      "type": "p",
+      "text": "The thickness is your target R-value divided by the product's R-value per inch. This tells you how deep the insulation must be to reach your target with that product."
+    },
+    {
+      "type": "p",
+      "text": "Here is the worked example from the calculator. Say you are insulating 400 sq ft of exterior wall to a target of R-13, using a product rated at 3.7 R per inch."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Divide the target R-value, 13, by the product's R-value per inch, 3.7.",
+        "The result is 3.51 in of insulation thickness needed to reach R-13."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Thickness is only one part of the answer. A product rated at 3.7 R per inch needs 3.51 in of material to reach R-13 on its own. Compare that figure with the depth of your wall cavity before you buy. If the product is thinner than the depth you need, a single layer will not reach your target."
+    },
+    {
+      "type": "h2",
+      "text": "Calculate the number of packages"
+    },
+    {
+      "type": "p",
+      "text": "Packages are counted by area, so the count depends on the square footage you need to cover. The coverage printed on the label already reflects the product's thickness, so you do not adjust it yourself. Divide the wall area by the coverage per package, then round up to a whole package."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Divide the wall area, 400 sq ft, by the coverage per package, 40 sq ft.",
+        "Round the result up to the next whole package."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "In this example, 400 sq ft divided by 40 sq ft per package gives exactly 10 packages. The 40 sq ft figure applies to the 3.51 in thickness from the previous step. Coverage must match the installed thickness, so if your product's label lists a different coverage for a different thickness, use the figure for the thickness you actually install. You would buy 10 packages for that wall area."
+    },
+    {
+      "type": "p",
+      "text": "Always check the coverage printed on your product label before you order. Products differ, so do not assume the coverage from one brand applies to another. Enter your own numbers into the calculator rather than relying on the example values above."
+    },
+    {
+      "type": "h2",
+      "text": "Common pitfalls when estimating wall insulation"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Forgetting to subtract windows and doors. Large openings can change the package count noticeably.",
+        "Using an R-value that does not match your thickness. Check whether the label lists the rating for the thickness you plan to install.",
+        "Mixing up thickness with package count. You need both numbers: thickness tells you whether one layer can reach your target, and package count tells you how much to buy.",
+        "Buying exactly the calculated amount. Odd shapes, small sections, and cutting around fixtures can use extra material, so review your plan against the result before you order."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Enter your own wall area, target R-value, product R-value per inch, and coverage per package into the [Insulation Calculator](/insulation-calculator) to get your numbers. Use your own measurements rather than the example values above."
+    },
+    {
+      "type": "h2",
+      "text": "FAQ"
+    },
+    {
+      "type": "h3",
+      "text": "Can I use an R-value per inch from a website instead of the label?"
+    },
+    {
+      "type": "p",
+      "text": "Use the label on the product you plan to buy. General ranges for each insulation type are useful for comparing options, but the exact rating for your product is what matters for the thickness calculation."
+    },
+    {
+      "type": "h3",
+      "text": "Why does thickness matter if I am buying by the package?"
+    },
+    {
+      "type": "p",
+      "text": "Thickness tells you whether a single layer can reach your target R-value and whether it will fit in the depth of your wall. Package count tells you how much to buy. You need both to make sure the job works."
+    },
+    {
+      "type": "h3",
+      "text": "Should I add extra packages to the count?"
+    },
+    {
+      "type": "p",
+      "text": "The calculator rounds up to whole packages, which already gives you some margin. If your walls have many small sections or awkward shapes, you may want to add a package, but check your own layout first and confirm the coverage on the label."
+    },
+    {
+      "type": "h3",
+      "text": "Who should I ask about the right R-value for my home?"
+    },
+    {
+      "type": "p",
+      "text": "A qualified professional who knows your climate and your home is the right person to ask. This site only helps you estimate quantities once you have chosen a target."
+    }
+  ]
+}
