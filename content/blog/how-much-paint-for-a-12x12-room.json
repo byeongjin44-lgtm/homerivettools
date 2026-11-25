@@ -29,7 +29,7 @@
   "body": [
     {
       "type": "p",
-      "text": "For a 12 by 12 foot bedroom with 8-foot walls, one door, one window, two coats and the default coverage of 350 square feet per gallon, the calculator gives Paint to buy: 2 gallons. That figure covers the walls only. Ceilings and trim need their own estimates."
+      "text": "For a 12 by 12 foot bedroom with 8-foot walls, one door, one window, two coats and the default coverage of 350 square feet per gallon, the calculator says to buy 2 gallons. That figure covers the walls only. Ceilings and trim need their own estimates."
     },
     {
       "type": "p",
@@ -97,7 +97,7 @@
     },
     {
       "type": "p",
-      "text": "Paint is sold in whole gallons, so the calculator always rounds up, never down. Any fraction of a gallon, even a small one, becomes a full gallon in the result. That is why 1.97 gallons becomes Paint to buy: 2 gallons."
+      "text": "Paint is sold in whole gallons, so the calculator always rounds up, never down. Any fraction of a gallon, even a small one, becomes a full gallon in the result. That is why 1.97 gallons becomes 2 gallons to buy."
     },
     {
       "type": "p",
@@ -163,7 +163,7 @@
     },
     {
       "type": "p",
-      "text": "For one door, one window and two coats at the default coverage of 350 square feet per gallon, the calculator gives Paint to buy: 2 gallons. A room with different openings, a different coverage rate or a different number of coats may need a different amount, so run your own measurements."
+      "text": "For one door, one window and two coats at the default coverage of 350 square feet per gallon, the calculator says to buy 2 gallons. A room with different openings, a different coverage rate or a different number of coats may need a different amount, so run your own measurements."
     },
     {
       "type": "h3",
