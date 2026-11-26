@@ -1,0 +1,135 @@
+{
+  "slug": "how-many-bags-of-concrete-for-4x4-pad",
+  "title": "How Many Bags of Concrete for a 4x4 Pad? 80 lb Bag Count",
+  "description": "A 4x4 pad 4 inches thick needs 9 bags of 80 lb concrete. Here is the math, the cubic yard figure, and how to check your own pad size.",
+  "published": "2026-11-26",
+  "relatedTool": "concrete-calculator",
+  "sources": [
+    {
+      "title": "Quikrete Concrete Mix No. 1101 data sheet",
+      "url": "https://www.quikrete.com/pdfs/data_sheet-concrete%20mix%201101.pdf"
+    }
+  ],
+  "calculations": [
+    {
+      "calculator": "concrete-calculator",
+      "input": {
+        "lengthFt": 4,
+        "widthFt": 4,
+        "thicknessIn": 4,
+        "bagLb": "80"
+      }
+    }
+  ],
+  "body": [
+    {
+      "type": "p",
+      "text": "A 4x4 pad that is 4 inches thick needs 9 bags of 80 lb concrete. That is the answer from our [Concrete Calculator](/concrete-calculator) with the inputs 4 ft long, 4 ft wide, 4 in thick, 80 lb bags, and no extra allowance for spillage."
+    },
+    {
+      "type": "p",
+      "text": "Small pads like this are a common DIY job. Think of a base under an outdoor AC unit, a trash bin, or a pair of stepping spots by a door. The method below works for any rectangle, so you can use your own measurements."
+    },
+    {
+      "type": "h2",
+      "text": "The worked example: 4x4 pad, 4 inches thick"
+    },
+    {
+      "type": "p",
+      "text": "The calculator works in three steps. You can check each one by hand with a calculator in hand."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Find the volume in cubic feet. Multiply length by width by thickness in inches, then divide by 12, because thickness is entered in inches and the volume is in feet. For this pad, 4 ft x 4 ft x 4 in / 12 gives 5.33 cu ft.",
+        "Convert cubic feet to cubic yards by dividing by 27. The same pad comes to 0.2 cu yd. Cubic yards are the unit bulk concrete is sold in, but small volumes like this usually are not delivered in bulk, because suppliers often have minimum orders and delivery charges.",
+        "Divide the cubic feet by the yield of one bag. An 80 lb bag yields 0.6 cu ft, so 5.33 cu ft / 0.6 gives 8.9 bags. You cannot buy a fraction of a bag, so you round up to 9 bags."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The exact bag count is 8.9 bags, and the number to buy is 9 bags. Always round up. If you run short partway through the pour, a second batch from a later trip may not match the first in color or set time."
+    },
+    {
+      "type": "h2",
+      "text": "Why the 80 lb bag suits a pad this size"
+    },
+    {
+      "type": "p",
+      "text": "Bagged concrete comes in sizes that suit small jobs. For this pad, the 80 lb bag yields 0.6 cu ft, so the 5.33 cu ft volume becomes 9 bags to buy. Bag size changes the count a lot, so check the size before you shop."
+    },
+    {
+      "type": "p",
+      "text": "Always check the yield printed on the product label, because products differ. The yield on your bag may not match the figure the calculator uses, so compare the label before you buy."
+    },
+    {
+      "type": "p",
+      "text": "For a volume of 0.2 cu yd, bags are usually the practical choice. Suppliers rarely deliver amounts this small in bulk, and a bulk delivery comes with a minimum volume and a delivery charge. Bags let you mix only what you need and pour in stages."
+    },
+    {
+      "type": "h2",
+      "text": "Pitfalls that cause a short or an extra trip"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Using the wrong thickness. A 4 inch pad uses 4 in in the formula. If you enter 4 ft by mistake, the result will be far too large.",
+        "Measuring the outside edge of a form instead of the inside. Measure the space the concrete will fill.",
+        "Forgetting to add spillage. The calculator lets you add an extra percentage. This example uses 0 %, so the 9 bags assume no waste. If you expect to lose some concrete to uneven ground or edges, add extra.",
+        "Mixing bags with different yields. Buy all the bags in one size and brand so the count matches the label."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "How to use the calculator with your own measurements"
+    },
+    {
+      "type": "p",
+      "text": "Measure the length and width of the area in feet, and the thickness in inches. Enter those into the [Concrete Calculator](/concrete-calculator), pick your bag size, and add any spillage percentage you want. The tool rounds up to whole bags for you."
+    },
+    {
+      "type": "p",
+      "text": "If your pad is larger, the same steps apply. For bigger slabs, see [How Many Bags of Concrete for a 12x12 Slab? 4-Inch Example](/blog/how-many-bags-concrete-12x12-slab) or [How Many Bags of Concrete for a 10x10 Slab? 4-Inch Example](/blog/how-many-bags-of-concrete-for-10x10-slab)."
+    },
+    {
+      "type": "p",
+      "text": "This page estimates material only. For anything about the ground under the pad or how it should be built, ask a qualified professional."
+    },
+    {
+      "type": "h2",
+      "text": "FAQ"
+    },
+    {
+      "type": "h3",
+      "text": "Can I buy fewer bags than the calculator says?"
+    },
+    {
+      "type": "p",
+      "text": "The calculator's exact count is 8.9 bags, which rounds up to 9 bags to buy. Buying fewer leaves you short, so buy the rounded-up number, or more if you want to allow for spillage."
+    },
+    {
+      "type": "h3",
+      "text": "Is 0.2 cu yd the same as 5.33 cu ft?"
+    },
+    {
+      "type": "p",
+      "text": "Yes, they describe the same volume in different units. Cubic yards are cubic feet divided by 27, so 5.33 cu ft is about 0.2 cu yd."
+    },
+    {
+      "type": "h3",
+      "text": "Do I need extra concrete for spillage?"
+    },
+    {
+      "type": "p",
+      "text": "It depends on the ground and how carefully you pour. The example here uses 0 %. If you want a margin, enter a percentage in the calculator and it will show the added bags."
+    },
+    {
+      "type": "h3",
+      "text": "Does the yield on the bag matter?"
+    },
+    {
+      "type": "p",
+      "text": "Yes. Bag yields change with bag size and product. Check the yield printed on the label, because products differ, and use the calculator with that number if it differs from the figure it uses."
+    }
+  ]
+}
